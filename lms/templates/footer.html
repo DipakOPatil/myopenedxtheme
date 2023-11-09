@@ -1,6 +1,7 @@
 ## mako
 <%page expression_filter="h"/>
 <%namespace name='static' file='static_content.html'/>
+<link rel="stylesheet" href="${static.url("css/Footer.css")}">
 <%!
 from django.urls import reverse
 from django.utils.translation import ugettext as _
@@ -15,6 +16,71 @@ from openedx.core.djangolib.markup import HTML, Text
 
 <div class="wrapper wrapper-footer">
   <footer>
+    <!--new footer start here-->
+    <div class="footertopmenu">
+      <div class="containerfluid">
+      <div class="FootTOPInR">
+      <div class="Footcol1">
+      <div class="FootcoliNR">
+      <div class="FootLoG">
+      <p>A 'Smart' learning platform that goes beyond certifications to drive lifelong success in the technology field.</p>
+      <ul class="socialIconsSection d-flex">
+      <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://twitter.com/SkillUp_Online"></a></li>
+      <li class="nav-item linkIcon rounded-circle mx-3"><a target="_blank" href="https://www.facebook.com/skillup.online/"></a></li>
+      <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://www.linkedin.com/company/skillup-online/"></a></li>
+      <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://www.instagram.com/skilluponline/?hl=en"></a></li>
+      <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://www.youtube.com/@skilluponlineofficial"></a></li>
+      </ul>
+      <div class="ContActUs">
+      <a href="#">
+      <div class="ContActUsIn"> 
+      <span>Contact Us</span>
+      </div>
+      </a>
+      </div>
+      </div>
+      <div class="FootMenu">
+      <div class="FootMenuiNNr">
+      <div class="FootMenuHeDinG">
+      <h2>Company</h2>
+      </div>
+      <ul>
+      <li class="nav-item"><a href="#">About SkillUp Online</a></li>
+      <li class="nav-item"><a class="yellTxt" href="#">SkillUp Online for Business</a></li>
+      <li class="nav-item "><a href="#">Placement</a></li>
+      <li class="nav-item "><a href="#">FAQs</a></li>
+      <li class="nav-item "><a href="#">Privacy Policy</a></li>
+      <li class="nav-item "><a href="#">Terms of Service</a></li>
+      <li class="nav-item "><a target="_blank" href="https://skillup.online/blog">Blog</a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="Footcol2">
+      <div class="FootForm">
+      <div class="FootMenuHeDinG">
+      <h2>Newsletters &amp; Updates</h2>
+      <p>Subscribe to get the latest tech career trends, guidance, and tips in your inbox.</p>
+      </div>
+      <div class="FootFormInR">
+      <form><div class="FormGroup">
+      <div class="FormGroupIn">
+      <input type="text" class="formcontrol" placeholder="Full Name" autocomplete="off" name="full_name">
+      </div>
+      <div class="FormGroupIn">
+      <input type="text" class="formcontrol" placeholder="Email" autocomplete="off" name="email"></div>
+      </div>
+      <div class="FormBtN"><button type="Subscribe" class="btnDisabled">Subscribe</button>
+      </div>
+      </form>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    <!--new footer end here-->
     <!-- This is super-ugly, don't use it! -->
     <div class="colophon">
       <nav class="nav-colophon" aria-label="${_('About')}">
