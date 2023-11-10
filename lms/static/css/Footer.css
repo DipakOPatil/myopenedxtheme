@@ -1,3 +1,6 @@
+[type=reset]:not(:disabled), [type=submit]:not(:disabled), a, body, button, button:not(:disabled), div, footer [type=button]:not(:disabled), h1, h2, h3, h4, h5, h6, header, html, input, label, optgroup, p, section, select, span, textarea, ul, ul li {
+    font-family: Montserrat,sans-serif!important;
+}
 .footer {
     /* background: #044150; */
     font-family: "Montserrat", sans-serif;
