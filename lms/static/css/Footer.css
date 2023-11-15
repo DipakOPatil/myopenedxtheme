@@ -5,6 +5,9 @@
     /* background: #044150; */
     font-family: "Montserrat", sans-serif;
 }
+.wrapper-footer{
+    padding: 0!important;
+}
 
 .socialIconsSection {
     list-style: none;
@@ -101,7 +104,7 @@
 }
 
 .footer {
-    padding: 30px 0 20px 0;
+    padding: 0;
 }
 .ContActUsIn {
     display: flex;
