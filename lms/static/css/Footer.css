@@ -407,7 +407,9 @@ footer .containerfluid {
     width: 50%;
 }
 
-.FootForm {}
+.FootForm {
+    padding-left: 64px;
+}
 
 .FootForm .FootFormInR {}
 
