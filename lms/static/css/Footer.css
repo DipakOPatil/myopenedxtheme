@@ -548,7 +548,9 @@ footer .containerfluid {
 .footerMiddleInR .PopularCourses ul li a:hover {
     color: #f9c654 !important;
 }
-
+input[type="submit"]:hover:not(:disabled), input[type="button"]:hover:not(:disabled), button:hover:not(:disabled), .button:hover:not(:disabled){
+    background-image: none;
+}
 
 /*Media Query*/
 
