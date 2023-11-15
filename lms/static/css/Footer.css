@@ -566,6 +566,23 @@ footer .containerfluid {
 }
 
 @media only screen and (max-width: 640px) {
+    .FootForm .FootFormInR .FormGroup {
+        display: block;
+    }
+    .FootForm .FootFormInR .FormGroup .FormGroupIn {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .FootForm {
+        padding-left: 0;
+    }
+    footer .containerfluid {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .FootTOPInR .Footcol1 .FootcoliNR {
+        display: block;
+    }
     .FootTOPInR .Footcol1 .FootcoliNR .FootLoGo {
         width: 100%;
     }
