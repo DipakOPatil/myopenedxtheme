@@ -19,77 +19,87 @@ from openedx.core.djangolib.markup import HTML, Text
     <!--new footer start here-->
     <div class="footertopmenu">
       <div class="containerfluid">
-      <div class="FootTOPInR">
-      <div class="Footcol1">
-      <div class="FootcoliNR">
-      <div class="FootLoG">
-        <a href="#"><img src="${static.url("images/Logo_Footer.svg")}" alt="${_('Skillup Online')}" width="240" /></a>
-      <p>A 'Smart' learning platform that goes beyond certifications to drive lifelong success in the technology field.</p>
-      <ul class="socialIconsSection d-flex">
-      <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://twitter.com/SkillUp_Online"><img src="${static.url("images/social/TwiTNew.svg")}" alt="${_('twitter')}" /></a></li>
-      <li class="nav-item linkIcon rounded-circle mx-3"><a target="_blank" href="https://www.facebook.com/skillup.online/"><img src="${static.url("images/social/FBiNew.svg")}" alt="${_('facebook')}" /></a></li>
-      <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://www.linkedin.com/company/skillup-online/"><img src="${static.url("images/social/LinKDInNew.svg")}" alt="${_('linkedin')}" /></a></li>
-      <li class="nav-item linkIcon rounded-circle mx-3"><a target="_blank" href="https://www.instagram.com/skilluponline/?hl=en"><img src="${static.url("images/social/instaicon.svg")}" alt="${_('instagram')}" /></a></li>
-      <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://www.youtube.com/@skilluponlineofficial"><img src="${static.url("images/social/youtubeicon.svg")}" alt="${_('youtube')}" /></a></li>
-      </ul>
-      <div class="ContActUs">
-      <a href="#">
-      <div class="ContActUsIn"> 
-        <img src="${static.url("images/contactus.svg")}" alt="${_('Contact Us')}" /> <span>Contact Us</span>
-      </div>
-      </a>
-      </div>
-      </div>
-      <div class="FootMenu">
-      <div class="FootMenuiNNr">
-      <div class="FootMenuHeDinG">
-      <h2>Company</h2>
-      </div>
-      <ul>
-      <li class="nav-item"><a href="#">About SkillUp Online</a></li>
-      <li class="nav-item"><a class="yellTxt" href="#">SkillUp Online for Business</a></li>
-      <li class="nav-item "><a href="#">Placement</a></li>
-      <li class="nav-item "><a href="#">FAQs</a></li>
-      <li class="nav-item "><a href="#">Privacy Policy</a></li>
-      <li class="nav-item "><a href="#">Terms of Service</a></li>
-      <li class="nav-item "><a target="_blank" href="https://skillup.online/blog">Blog</a></li>
-      </ul>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div class="Footcol2">
-      <div class="FootForm">
-      <div class="FootMenuHeDinG">
-      <h2>Newsletters &amp; Updates</h2>
-      <p>Subscribe to get the latest tech career trends, guidance, and tips in your inbox.</p>
-      </div>
-      <div class="FootFormInR">
-      <form><div class="FormGroup">
-      <div class="FormGroupIn">
-      <input type="text" class="formcontrol" placeholder="Full Name" autocomplete="off" name="full_name">
-      </div>
-      <div class="FormGroupIn">
-      <input type="text" class="formcontrol" placeholder="Email" autocomplete="off" name="email"></div>
-      </div>
-      <div class="FormBtN"><button type="Subscribe" class="btnDisabled">Subscribe</button>
-      </div>
-      </form>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div class="footerMiddlemenu">
-        <div class="containerfluid">
-        <div class="footerMiddleInR">
-        <div class="PopularCategories">
-        <div class="FootMenuHeDinG">
-        <h2>Popular Categories</h2>
+        <div class="FootTOPInR">
+          <div class="Footcol1">
+            <div class="FootcoliNR">
+              <div class="FootLoGo">
+                <Link href="/">
+                  <a className={styles.FTLogo}>
+                    <logo.FooterLogo />
+                  </a>
+                </Link>
+                <p>
+                  A 'Smart' learning platform that goes beyond certifications
+                  to drive lifelong success in the technology field.
+                </p>
+                <ul class="socialIconsSection d-flex">
+                  <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://twitter.com/SkillUp_Online"><img src="${static.url("images/social/TwiTNew.svg")}" alt="${_('twitter')}" /></a></li>
+                  <li class="nav-item linkIcon rounded-circle mx-3"><a target="_blank" href="https://www.facebook.com/skillup.online/"><img src="${static.url("images/social/FBiNew.svg")}" alt="${_('facebook')}" /></a></li>
+                  <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://www.linkedin.com/company/skillup-online/"><img src="${static.url("images/social/LinKDInNew.svg")}" alt="${_('linkedin')}" /></a></li>
+                  <li class="nav-item linkIcon rounded-circle mx-3"><a target="_blank" href="https://www.instagram.com/skilluponline/?hl=en"><img src="${static.url("images/social/instaicon.svg")}" alt="${_('instagram')}" /></a></li>
+                  <li class="nav-item linkIcon rounded-circle"><a target="_blank" href="https://www.youtube.com/@skilluponlineofficial"><img src="${static.url("images/social/youtubeicon.svg")}" alt="${_('youtube')}" /></a></li>
+                </ul>
+                <div class="ContActUs">
+                  <a href="#">
+                    <div class="ContActUsIn"> 
+                      <img src="${static.url("images/contactus.svg")}" alt="${_('Contact Us')}" /> <span>Contact Us</span>
+                    </div>
+                    </a>
+                </div>
+              </div>
+              <div class="FootMenu">
+                <div class="FootMenuiNNr">
+                  <div class="FootMenuHeDinG">
+                    <h2>Company</h2>
+                  </div>
+                  <ul>
+                    <li class="nav-item"><a href="#">About SkillUp Online</a></li>
+                    <li class="nav-item"><a class="yellTxt" href="#">SkillUp Online for Business</a></li>
+                    <li class="nav-item "><a href="#">Placement</a></li>
+                    <li class="nav-item "><a href="#">FAQs</a></li>
+                    <li class="nav-item "><a href="#">Privacy Policy</a></li>
+                    <li class="nav-item "><a href="#">Terms of Service</a></li>
+                    <li class="nav-item "><a target="_blank" href="https://skillup.online/blog">Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Footcol2">
+            <div class="FootForm">
+              <div class="FootMenuHeDinG">
+                <h2>Newsletters & Updates</h2>
+                <p>
+                  Subscribe to get the latest tech career trends, guidance,
+                  and tips in your inbox.
+                </p>
+              </div>
+              <div class="FootFormInR">
+                <form><div class="FormGroup">
+                  <div class="FormGroupIn">
+                  <input type="text" class="formcontrol" placeholder="Full Name" autocomplete="off" name="full_name">
+                  </div>
+                  <div class="FormGroupIn">
+                  <input type="text" class="formcontrol" placeholder="Email" autocomplete="off" name="email"></div>
+                  </div>
+                  <div class="FormBtN"><button type="Subscribe" class="btnDisabled">Subscribe</button>
+                  </div>
+                  </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul>
-        <li class="nav-item"><a href="#">Artificial Intelligence</a></li>
+      </div>
+    </div>
+    <div class="footerMiddlemenu">
+      <div class="containerfluid">
+        <div class="footerMiddleInR">
+          <div class="PopularCategories">
+            <div class="FootMenuHeDinG">
+              <h2>Popular Categories</h2>
+            </div>
+            <ul>
+              <li class="nav-item"><a href="#">Artificial Intelligence</a></li>
         <li class="nav-item"><a href="#">Big Data</a></li>
         <li class="nav-item"><a href="#">Blockchain</a></li>
         <li class="nav-item"><a href="#">Business Applications</a></li>
@@ -104,51 +114,71 @@ from openedx.core.djangolib.markup import HTML, Text
         <li class="nav-item"><a href="#">Modern Workplace</a></li>
         <li class="nav-item"><a href="#">Power Platform</a></li>
         <li class="nav-item"><a href="#">Productivity</a></li>
-        </ul>
+            </ul>
+          </div>
+          <div class="PopularCourses">
+            <div class="FootMenuHeDinG">
+              <h2>Popular Courses</h2>
+            </div>
+            <ul>
+              <li class="nav-item"><a href="#">Artificial Intelligence Foundations</a></li>
+              <li class="nav-item"><a href="#">AI-050: Develop Generative AI Solutions with Azure OpenAI Service</a></li>
+              <li class="nav-item"><a href="#">Foundations of Cybersecurity Program</a></li>
+              <li class="nav-item"><a href="#">AI Chatbots Without Programming</a></li>
+            </ul>
+          </div>
+          <div class="LatestBlogs">
+            <div class="FootMenuHeDinG">
+              <h2>Latest Blogs</h2>
+            </div>
+            <div class="LatestBlogsInR">
+              <div class="LatestBlogsRepT">
+                <div class="LatestBlImG">
+                  <img src="${static.url("images/blogimg1.png")}" alt="${_('blog')}" />
+                </div>
+                <div class="LatestBlConT">
+                  <h3>What Do Cybersecurity Professionals Do?</h3>
+                  <p>AUGUST 5, 2022</p>
+                </div>
+                <a
+                class="linkblogpost"
+                  href="#"
+                ></a>
+              </div>
+              <div class="LatestBlogsRepT">
+                <div class="LatestBlImG">
+                  <img src="${static.url("images/blogimg2.png")}" alt="${_('blog')}" />
+                </div>
+                <div class="LatestBlConT">
+                  <h3>How to Start Your AI Career</h3>
+                  <p>JULY 22, 2022</p>
+                </div>
+                <a class="linkblogpost"
+                  href="#"
+                ></a>
+              </div>
+              <div class="LatestBlogsRepT">
+                <div class="LatestBlImG">
+                  <img src="${static.url("images/blogimg3.png")}" alt="${_('blog')}" />
+                </div>
+                <div class="LatestBlConT">
+                  <h3>4 Tips for Leading Remote Teams</h3>
+                  <p>JULY 8, 2022</p>
+                </div>
+                <a class="linkblogpost"
+                  href="#"
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="PopularCourses">
-        <div class="FootMenuHeDinG">
-        <h2>Popular Courses</h2></div>
-        <ul>
-        <li class="nav-item"><a href="#">Artificial Intelligence Foundations</a></li>
-        <li class="nav-item"><a href="#">AI-050: Develop Generative AI Solutions with Azure OpenAI Service</a></li>
-        <li class="nav-item"><a href="#">Foundations of Cybersecurity Program</a></li>
-        <li class="nav-item"><a href="#">AI Chatbots Without Programming</a></li></ul>
-        </div>
-        <div class="LatestBlogs">
-        <div class="FootMenuHeDinG">
-        <h2>Latest Blogs</h2>
-        </div>
-        <div>
-        <div class="LatestBlogsRepT">
-        <div class="LatestBlImG">
-        </div>
-        <div>
-        <h3>What Do Cybersecurity Professionals Do?</h3>
-        <p>AUGUST 5, 2022</p></div>
-        <a class="linkblogpost" href="#"></a></div>
-        <div class="Footer_LatestBlogsRepT__F2CHs">
-        <div class="LatestBlImG">
-        </div>
-        <div>
-        <h3>How to Start Your AI Career</h3>
-        <p>JULY 22, 2022</p>
-        </div>
-        <a class="linkblogpost" href="#"></a></div>
-        <div class="LatestBlogsRepT">
-        <div class="LatestBlImG">
-        </div>
-        <div>
-        <h3>4 Tips for Leading Remote Teams</h3>
-        <p>JULY 8, 2022</p>
-        </div>
-        <a class="linkblogpost" href="#"></a>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+      </div>
+    </div>
+    <div class="footercopyright">
+      <div class="containerfluid">
+        <p>© 2022 - SkillUp Online | All Rights Reserved.</p>
+      </div>
+    </div>
     <!--new footer end here-->
     <!-- This is super-ugly, don't use it! -->
     <!-- <div class="colophon">
