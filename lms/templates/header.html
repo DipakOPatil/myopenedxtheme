@@ -1,0 +1,280 @@
+## mako
+<%page expression_filter="h"/>
+<%namespace name='static' file='static_content.html'/>
+<link rel="stylesheet" href="${static.url("css/Header.css")}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+<%!
+from django.urls import reverse
+from django.utils.translation import ugettext as _
+from django.conf import settings
+
+from datetime import datetime
+import pytz
+
+from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
+from openedx.core.djangolib.markup import HTML, Text
+%>
+
+<div class="wrapper wrapper-footer">
+  <header class="headerBody sticky-top" id="headerBody">
+    <nav class="navbar navbar-expand-lg navbar-light headerContents"
+    >
+      <div class="container-fluid headerBar">
+        <div class="headerLeft">
+          <button class="navbar-toggler border-0 shadow-none py-1 mt-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <HamburgerIcon />
+          </button>
+
+          <div class="navbar-brand">
+              <a href="/">
+                <HeaderLogo />
+              </a>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul id="MaNUTOP" class="MoBiLeMeNU active p-0">
+            <li class="UserDeatiLs">
+              <button class="CloseSideBar navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <CloseIcon />
+              </button>
+
+              
+            </li>
+            <li>
+              <ul id="MMFRSTMeNU1" class="MMFRSTMeNU p-0">
+                <li>
+                  <ul class="CoUrSEMAInMunE">
+                    <li class="CoUrSEMAInMunEmain">
+                     
+                      <ul
+                        id="CourSeMDroPdN" class="DRPDoNMeNU"
+                      >
+                        <li onClick={onAddClickcct}>
+                          <a href="#">Categories</a>
+                        </li>
+                        <li onClick={onAddClickcbp}>
+                          <a href="#">Courses by</a>
+                        </li>
+                        <li onClick={onAddClickpc}>
+                          <a href="#">Popular courses</a>
+                        </li>
+                        <li onClick={onAddClickst}>
+                          <a href="#">Services</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="DRONDONSUBMENUMObILE" ref={navRef}>
+                      <div class="DrOPDOWNMHeDaing">
+                        <h2
+                          class="corcatheading"
+                          onClick={onToggleClickcct}
+                        >
+                          Categories
+                        </h2>
+                        <h2
+                          class="popcorrseheading"
+                          onClick={onToggleClickcpb}
+                        >
+                          Courses by
+                        </h2>
+                        <h2
+                          class="coursebypartheading"
+                          onClick={onToggleClickpc}
+                        >
+                          Popular courses
+                        </h2>
+                        <h2
+                          class="serviceofferheading"
+                          onClick={onToggleClickst}
+                        >
+                          Services
+                        </h2>
+                      </div>
+                      <HeaderDropDown popularCourses={popularCourses} />
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobileBld">
+                  <a href="#">
+                    <span
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent"
+                    >
+                      About SkillUp Online
+                    </span>
+                  </a>
+                </li>
+                <li class="mobileBld">
+                    <a target="_blank" href="https://skillup.online/blog">
+                      <span
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                      >
+                        Blog
+                      </span>
+                    </a>
+                </li>
+                <li class="mobileBld">
+                    <a href="#">
+                      <span
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                      >
+                        Contact Us
+                      </span>
+                    </a>
+                </li>
+
+               
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="headerRight">
+          <ul class="navbar-nav nav"
+            onMouseEnter="handleHover"
+            onMouseLeave="handleMouseLeave"
+            onClick="handleClick"
+          >
+            <li class="nav-item dropdown">
+                <a href="#"
+                  id="navbarDropdown"
+                  data-bs-toggle="dropdown"
+                  class="text-decoration-none"
+                >
+                  <div class="category">
+                    Course
+                    <DropDownIcon />
+                  </div>
+                </a>
+              <ul class="dropdown-menu dropdown-cat dropdownMenu"
+              >
+                <li>
+                  <HeaderDropDown popularCourses={popularCourses} />
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav headSearch">
+            <li>
+              <form class="searchForm"
+                id="searchForm"
+                onSubmit="handleSubmit"
+              >
+                <div class="inputGroup d-flex"
+                  ref={autoRef}
+                >
+                  <input
+                    id="contentSearch"
+                    type="text"
+                    class="search-input shadow-none searchInput"
+                    placeholder="Which course are you looking for?"
+                    name="search"
+                    value="searchQuery"
+                    autoComplete="off"
+                  />
+                  <span class="inputGroupButton px-0">
+                    <button
+                      type="submit"
+                      id="btnCheck"
+                      class="btn searchButton"
+                    >
+                      <SearchIcon />
+                    </button>
+                  </span>
+                  <ul class="coursetitleDrop">
+                    <li></li>
+                  </ul>
+                </div>
+              </form>
+            </li>
+          </ul>
+          <ul class="list-unstyled navbar-nav nav navLinks">
+            <li>
+              <a href="#">About SkillUp Online</a>
+            </li>
+
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+
+            <li>
+              <a href="https://skillup.online/blog" target="_blank">Blog</a>
+              
+            </li>
+            
+          </ul>
+
+          <ul class="list-unstyled navbar-nav nav navButtons"
+          >
+            <li class="searchMobileBtn">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobileSearch"
+                aria-controls="mobileSearch"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <SearchIcon />
+              </button>
+            </li>
+
+            
+          </ul>
+        </div>
+      </div>
+      <div class="collapse searchMobile" id="mobileSearch">
+        <ul class="nav navbar-nav headSearchMobile pb-1">
+          <li>
+            <form class="searchForm"
+              id="searchForm"
+              name="search"
+            >
+              <div class="inputGroup d-flex" ref={autoRef}>
+                <input
+                  id="contentSearch"
+                  type="text"
+                  class="search-input shadow-none searchInput"
+                  placeholder="Which course are you looking for?"
+                  name="search"
+                />
+                <span class="inputGroupButton px-0">
+                  <button
+                    type="submit"
+                    id="btnCheck"
+                    class="searchButton"
+                  >
+                    <SearchIcon />
+                  </button>
+                </span>
+                <ul class="coursetitleDrop">
+                  <li></li>
+                </ul>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
