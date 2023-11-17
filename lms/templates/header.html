@@ -161,8 +161,16 @@ from openedx.core.djangolib.markup import HTML, Text
                   class="text-decoration-none"
                 >
                   <div class="category">
-                    Course
-                    <DropDownIcon />
+                    <!-- Course
+                    <DropDownIcon /> -->
+                    <div class="dropdown" id="myDropdown">
+                      <button>Course</button>
+                      <div class="dropdown-content" id="dropdownContent">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                    </div>
                   </div>
                 </a>
               <ul class="dropdown-menu dropdown-cat dropdownMenu"
@@ -279,3 +287,12 @@ from openedx.core.djangolib.markup import HTML, Text
     </nav>
   </header>
 </div>
+<script>
+  // JavaScript to freeze dropdown on click
+  var dropdown = document.getElementById('myDropdown');
+  var dropdownContent = document.getElementById('dropdownContent');
+
+  dropdown.addEventListener('click', function() {
+    dropdownContent.classList.toggle('freeze-dropdown');
+  });
+</script>
