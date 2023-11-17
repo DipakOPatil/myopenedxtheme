@@ -67,43 +67,43 @@ from openedx.core.djangolib.markup import HTML, Text
                       <ul
                         id="CourSeMDroPdN" class="DRPDoNMeNU"
                       >
-                        <li onClick={onAddClickcct}>
+                        <li onClick="onAddClickcct">
                           <a href="#">Categories</a>
                         </li>
-                        <li onClick={onAddClickcbp}>
+                        <li onClick="onAddClickcbp">
                           <a href="#">Courses by</a>
                         </li>
-                        <li onClick={onAddClickpc}>
+                        <li onClick="onAddClickpc">
                           <a href="#">Popular courses</a>
                         </li>
-                        <li onClick={onAddClickst}>
+                        <li onClick="onAddClickst">
                           <a href="#">Services</a>
                         </li>
                       </ul>
                     </li>
-                    <li class="DRONDONSUBMENUMObILE" ref={navRef}>
+                    <li class="DRONDONSUBMENUMObILE" ref="navRef">
                       <div class="DrOPDOWNMHeDaing">
                         <h2
                           class="corcatheading"
-                          onClick={onToggleClickcct}
+                          onClick="onToggleClickcct"
                         >
                           Categories
                         </h2>
                         <h2
                           class="popcorrseheading"
-                          onClick={onToggleClickcpb}
+                          onClick="onToggleClickcpb"
                         >
                           Courses by
                         </h2>
                         <h2
                           class="coursebypartheading"
-                          onClick={onToggleClickpc}
+                          onClick="onToggleClickpc"
                         >
                           Popular courses
                         </h2>
                         <h2
                           class="serviceofferheading"
-                          onClick={onToggleClickst}
+                          onClick="onToggleClickst"
                         >
                           Services
                         </h2>
@@ -181,7 +181,7 @@ from openedx.core.djangolib.markup import HTML, Text
                 onSubmit="handleSubmit"
               >
                 <div class="inputGroup d-flex"
-                  ref={autoRef}
+                  ref="autoRef"
                 >
                   <input
                     id="contentSearch"
@@ -198,7 +198,7 @@ from openedx.core.djangolib.markup import HTML, Text
                       id="btnCheck"
                       class="btn searchButton"
                     >
-                      <SearchIcon />
+                    <img src="${static.url("images/Search.svg")}" alt="${_('search')}" />
                     </button>
                   </span>
                   <ul class="coursetitleDrop">
