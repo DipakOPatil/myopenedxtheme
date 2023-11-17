@@ -3,7 +3,11 @@
 <%namespace name='static' file='static_content.html'/>
 <link rel="stylesheet" href="${static.url("css/Header.css")}">
 <link rel="stylesheet" href="${static.url("css/DropdownStyle.css")}">
+<link rel="stylesheet" href="${static.url("css/_common.css")}">
+<link rel="stylesheet" href="${static.url("css/_Head.css")}">
+<link rel="stylesheet" href="${static.url("css/bootstrap.min.css")}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
 <%!
 from django.urls import reverse
 from django.utils.translation import ugettext as _
@@ -17,276 +21,231 @@ from openedx.core.djangolib.markup import HTML, Text
 %>
 
 <div class="wrapper wrapper-footer">
-  <header class="headerBody sticky-top" id="headerBody">
-    <nav class="navbar navbar-expand-lg navbar-light headerContents"
-    >
-      <div class="container-fluid headerBar">
-        <div class="headerLeft">
-          <button class="navbar-toggler border-0 shadow-none py-1 mt-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <HamburgerIcon />
-          </button>
-
-          <div class="navbar-brand">
-              <a href="/">
-                <img src="${static.url("images/Logo.svg")}" alt="${_('Skillup Online')}" />
-              </a>
-          </div>
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid"> 
+        <div class="navbar-header">
+          <a id="MaNUtAb" href="javascripts:void(0);"><img src="assets/images/hamburgerblk.svg"></a>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/Logo_SkillUpOriginal.svg" align="logo">
+          </a>
         </div>
-
-        <div class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul id="MaNUTOP" class="MoBiLeMeNU active p-0">
-            <li class="UserDeatiLs">
-              <button class="CloseSideBar navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <CloseIcon />
-              </button>
-
-              
-            </li>
+        <div class="navbar-right NAVRiGhT">
+          <ul class="nav navbar-nav CaTeGoRY_MeNU">
             <li>
-              <ul id="MMFRSTMeNU1" class="MMFRSTMeNU p-0">
-                <li>
-                  <ul class="CoUrSEMAInMunE">
-                    <li class="CoUrSEMAInMunEmain">
-                     
-                      <ul
-                        id="CourSeMDroPdN" class="DRPDoNMeNU"
-                      >
-                        <li onClick="onAddClickcct">
-                          <a href="#">Categories</a>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Category
+                <span><img src="assets/images/dpicons.svg"></span></button>
+                <ul id="MaNUTOP" class="MoBiLeMeNU">
+                  <li class="UserDeatiLs ">
+                    <a class="CloseSideBar" href="Javascript:void(0);"><img src="assets/images/closeicon.svg"></a>
+                    <span class="UserImG"><img src="assets/images/NoLoginM.png"></span>
+                    <span class="UserName"><a href="Javascript:void(0);">Hello, Log in</a></span>
+                  </li>
+                  <li>
+                    <ul id="MMFRSTMeNU1" class="MMFRSTMeNU">
+                      <li id="EXPCaTMENU" class="DPARROW"><a href="Javascript:void(0);">Explore categories</a></li>
+                      <li><a href="Javascript:void(0);">Blog</a></li>
+                      <li class="MenUAdd">
+                        <a href="Javascript:void(0);">Promo Content here if any</a>
+                      </li>
+                      <li><a href="Javascript:void(0);">Contact Us</a></li>
+                      <li><a href="Javascript:void(0);">SkillUp for Business</a></li>
+                      <li><a href="Javascript:void(0);">Log in</a></li>
+                      <li><a href="Javascript:void(0);">Sign Up</a></li>
+                    </ul>
+                  </li>
+                </ul>
+  
+                <ul id="MMDroPDoWNMAiN" class="dropdown-menu">
+                  <!--First Menu Start-->
+                  <li id="MMDroPDoWNMAiNBaCK" class="mmenuoption"><a href="javascript:void(0);">Categories</a></li>
+                  <li class="dropdown-submenu">
+                    <a id="ArtInT" class="CommmonClick" tabindex="-1" href="#">Artificial Intelligence</a>
+                    <ul id="ArtInTDP" class="dropdown-menu">
+                      <li id="ArtInTDPBK" class="mmenuoption"><a href="javascript:void(0);">Artificial Intelligence</a></li>
+                      <li class="dropdown-submenu">
+                        <!-- logic for normal category SkillUp Online-->
+                        <a id="IBMARTInT" href="#"><span class="textlogo-navi">IBM</span><strong>IBM</strong></a>
+                        <ul id="IBMARTInTBP" class="dropdown-menu multi-level">
+                          <li id="IBMARTInTBPBK" class="mmenuoption"><a href="javascript:void(0);">IBM</a></li>
+  
+                          <li><a href="/applied-ai-ibm-prof-cert">Professional Certificate in IBM Applied AI</a></li>
+                          <li><a href="/org?category=Artificial Intelligence&amp;organization=IBM&amp;lp=Deep Learning">Deep Learning</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online--><a href="/courses/course-v1:SkillUp+SKOAI101+2020_Q4/about"><span class="textlogo-navi">NASSCOM</span><strong>Foundations of Artificial Intelligence (AI) Program</strong></a> </li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online--><a href="/org?category=Artificial Intelligence&amp;organization=Professional Program for AI"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for AI</strong></a>
+                        <!-- end normal category -->
+                      </li>
+                    </ul>
+                  </li>
+                  <!--First Menu End-->
+                  <!--Second Menu Start-->
+                  <li class="dropdown-submenu">
+                    <a id="DatASCIenCE" class="CommmonClick" tabindex="-1" href="#">Data Science</a>
+                    <ul id="DatASCIenCEDP" class="dropdown-menu">
+                      <li id="DatASCIenCEBK" class="mmenuoption"><a href="javascript:void(0);">Data Science</a></li>
+                      <li class="dropdown-submenu">
+                        <!-- logic for normal category SkillUp Online--><a id="DatASCIenCEIBM" class="CommmonClick" href="#"><span class="textlogo-navi">IBM</span><strong>IBM</strong></a>
+                        <ul id="DatASCIenCEIBMDP" class="dropdown-menu multi-level">
+                          <li id="DatASCIenCEIBMDPBK" class="mmenuoption"><a href="javascript:void(0);">IBM</a></li>
+                          <li><a href="/datascience-ibm-prof-cert">Professional Certificate in IBM Data Science</a></li>
+                          <li><a href="/org?category=Data Science&amp;organization=IBM&amp;lp=Applied Data Science with Python">Applied Data Science with Python</a></li>
+                          <li><a href="/org?category=Data Science&amp;organization=IBM&amp;lp=Applied Data Science with R">Applied Data Science with R</a></li>
+                          <li><a href="/org?category=Data Science&amp;organization=IBM&amp;lp=Data Science for Business">Data Science for Business</a></li>
+                          <li><a href="/org?category=Data Science&amp;organization=IBM&amp;lp=Data Science Foundation">Data Science Foundation</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online--><a href="/org?category=Data Science&amp;organization=Professional Program for Data Science"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for Data Science</strong></a>
+                        <!-- end normal category -->
+                      </li>
+                    </ul>
+                  </li>
+                  <!--Second Menu End-->
+                  <!--Third Menu Start-->
+                  <li class="dropdown-submenu">
+                    <a id="BiGDaTa" class="CommmonClick" class="CaTDrOPDOWN" tabindex="-1" href="#">Big Data</a>
+                     <ul id="BiGDaTaDP" class="dropdown-menu">
+                      <li id="BiGDaTaDPBK" class="mmenuoption"><a href="javascript:void(0);">Big Data</a></li>
+                        <li class="dropdown-submenu">
+                          <!-- logic for normal category SkillUp Online--><a id="BiGDaTaIBM" class="CommmonClick" href="#"><span class="textlogo-navi">IBM</span><strong>IBM</strong></a>
+                          <ul id="BiGDaTaIBMDP" class="dropdown-menu multi-level">
+                            <li id="BiGDaTaIBMDPBK" class="mmenuoption"><a href="javascript:void(0);">IBM</a></li>
+                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Hadoop Programming">Hadoop Programming</a></li>
+                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Hadoop Fundamentals">Hadoop Fundamentals</a></li>
+                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Big Data Fundamentals">Big Data Fundamentals</a></li>
+                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Data Management with IBM">Data Management with IBM</a></li>
+                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Spark Fundamentals">Spark Fundamentals</a></li>
+                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Cognitive Analytics with IBM">Cognitive Analytics with IBM</a></li>
+                          </ul>
                         </li>
-                        <li onClick="onAddClickcbp">
-                          <a href="#">Courses by</a>
+                        <li>
+                          <!-- logic for normal category SkillUp Online--><a href="/org?category=Big Data&amp;organization=Foundational BDA Program"><span class="textlogo-navi">NASSCOM</span><strong>Foundational BDA Program</strong></a>
+                          <!-- end normal category -->
                         </li>
-                        <li onClick="onAddClickpc">
-                          <a href="#">Popular courses</a>
-                        </li>
-                        <li onClick="onAddClickst">
-                          <a href="#">Services</a>
+                        <li>
+                          <!-- logic for normal category SkillUp Online--><a href="/org?category=Big Data&amp;organization=Professional Program for Big Data"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for Big Data</strong></a>
+                          <!-- end normal category -->
                         </li>
                       </ul>
-                    </li>
-                    <li class="DRONDONSUBMENUMObILE" ref="navRef">
-                      <div class="DrOPDOWNMHeDaing">
-                        <h2
-                          class="corcatheading"
-                          onClick="onToggleClickcct"
-                        >
-                          Categories
-                        </h2>
-                        <h2
-                          class="popcorrseheading"
-                          onClick="onToggleClickcpb"
-                        >
-                          Courses by
-                        </h2>
-                        <h2
-                          class="coursebypartheading"
-                          onClick="onToggleClickpc"
-                        >
-                          Popular courses
-                        </h2>
-                        <h2
-                          class="serviceofferheading"
-                          onClick="onToggleClickst"
-                        >
-                          Services
-                        </h2>
-                      </div>
-                      <HeaderDropDown popularCourses={popularCourses} />
-                    </li>
-                  </ul>
-                </li>
-                <li class="mobileBld">
-                  <a href="#">
-                    <span
-                      data-bs-toggle="collapse"
-                      data-bs-target="#navbarSupportedContent"
-                    >
-                      About SkillUp Online
-                    </span>
-                  </a>
-                </li>
-                <li class="mobileBld">
-                    <a target="_blank" href="https://skillup.online/blog">
-                      <span
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                      >
-                        Blog
-                      </span>
-                    </a>
-                </li>
-                <li class="mobileBld">
-                    <a href="#">
-                      <span
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                      >
-                        Contact Us
-                      </span>
-                    </a>
-                </li>
-
-               
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="headerRight">
-          <ul class="navbar-nav nav"
-            onMouseEnter="handleHover"
-            onMouseLeave="handleMouseLeave"
-            onClick="handleClick"
-          >
-            <li class="nav-item dropdown">
-                <a href="#"
-                  id="navbarDropdown"
-                  data-bs-toggle="dropdown"
-                  class="text-decoration-none"
-                >
-                  <div class="category">
-                    <!-- Course
-                    <DropDownIcon /> -->
-                    <div class="dropdown" id="myDropdown">
-                      <button>Hover me</button>
-                      <div class="dropdown-content" id="dropdownContent">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              <ul class="dropdown-menu dropdown-cat dropdownMenu"
-              >
-                <li>
-                  <HeaderDropDown popularCourses={popularCourses} />
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav headSearch">
-            <li>
-              <form class="searchForm"
-                id="searchForm"
-                onSubmit="handleSubmit"
-              >
-                <div class="inputGroup d-flex"
-                  ref="autoRef"
-                >
-                  <input
-                    id="contentSearch"
-                    type="text"
-                    class="search-input shadow-none searchInput"
-                    placeholder="Which course are you looking for?"
-                    name="search"
-                    value="searchQuery"
-                    autoComplete="off"
-                  />
-                  <span class="inputGroupButton px-0">
-                    <button
-                      type="submit"
-                      id="btnCheck"
-                      class="btn searchButton"
-                    >
-                    <img src="${static.url("images/Search.svg")}" alt="${_('search')}" />
-                    </button>
-                  </span>
-                  <ul class="coursetitleDrop">
-                    <li></li>
-                  </ul>
-                </div>
-              </form>
-            </li>
-          </ul>
-          <ul class="list-unstyled navbar-nav nav navLinks">
-            <li>
-              <a href="#">About SkillUp Online</a>
-            </li>
-
-            <li>
-              <a href="#">Contact us</a>
-            </li>
-
-            <li>
-              <a href="https://skillup.online/blog" target="_blank">Blog</a>
-              
-            </li>
-            
-          </ul>
-
-          <ul class="list-unstyled navbar-nav nav navButtons"
-          >
-            <li class="searchMobileBtn">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mobileSearch"
-                aria-controls="mobileSearch"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <SearchIcon />
-              </button>
-            </li>
-
-            
-          </ul>
-        </div>
-      </div>
-      <div class="collapse searchMobile" id="mobileSearch">
-        <ul class="nav navbar-nav headSearchMobile pb-1">
-          <li>
-            <form class="searchForm"
-              id="searchForm"
-              name="search"
-            >
-              <div class="inputGroup d-flex" ref={autoRef}>
-                <input
-                  id="contentSearch"
-                  type="text"
-                  class="search-input shadow-none searchInput"
-                  placeholder="Which course are you looking for?"
-                  name="search"
-                />
-                <span class="inputGroupButton px-0">
-                  <button
-                    type="submit"
-                    id="btnCheck"
-                    class="searchButton"
-                  >
-                    <SearchIcon />
-                  </button>
-                </span>
-                <ul class="coursetitleDrop">
-                  <li></li>
+                  </li>
+                  <!--Third Menu End-->
+                  <!--Four Menu Start-->
+                  <li class="dropdown-submenu"> 
+                    <a id="CYbeRSecuritY" class="CommmonClick" href="#">CyberSecurity</a>
+                    <ul id="CYbeRSecuritYDP" class="dropdown-menu">
+                      <li id="CYbeRSecuritYDPBK" class="mmenuoption"><a href="javascript:void(0);">CyberSecurity</a></li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online--><a href="/org?category=CyberSecurity&amp;organization=CyberSecurity"><span class="textlogo-navi">NASSCOM</span><strong>CyberSecurity</strong></a>
+                        <!-- end normal category -->
+                      </li>
+                    </ul>
+                  </li>
+  
+                  <!--Four Menu End-->
+                  <!--Five Menu Start-->
+                  <li class="dropdown-submenu"> 
+                    <a id="InTERNEtIOT" class="CommmonClick" href="#">Internet of Things (IoT)</a>
+                    <ul id="InTERNEtIOTDP" class="dropdown-menu">
+                      <li id="InTERNEtIOTBK" class="mmenuoption"><a href="javascript:void(0);">Internet of Things (IoT)</a></li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online--><a href="/org?category=Internet of Things (IoT)&amp;organization=Foundational IOT Program"><span class="textlogo-navi">NASSCOM</span><strong>Foundational IOT Program</strong></a>
+                        <!-- end normal category -->
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu"> 
+                    <a id="Blockchainm" class="CommmonClick" href="#">Blockchain</a>
+                    <ul id="BlockchainDP" class="dropdown-menu">
+                      <li id="BlockchainBK" class="mmenuoption"><a href="javascript:void(0);">Blockchain</a></li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online--><a href="/org?category=Blockchain&amp;organization=Blockchain for Developers"><span class="textlogo-navi">IBM</span><strong>Blockchain for Developers</strong></a>
+                        <!-- end normal category -->
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu"> 
+                    <a id="ProductivitYM" class="CommmonClick" href="#">Productivity</a>
+                    <ul id="ProductivitYMDP" class="dropdown-menu">
+                      <li id="ProductivitYMBK" class="mmenuoption"><a href="javascript:void(0);">Productivity</a></li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online-->
+                        <a href="/courses/course-v1:SkillUpOnline+SKO_MSTeams+2019_T1/about"><img class="mr-5" src="/media/organization_logo/navi-logo-sko.jpg"><strong>Microsoft Teams</strong></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu"> 
+                    <a id="ComplianceM" class="CommmonClick" href="#">Compliance</a>
+                    <ul id="ComplianceMDP" class="dropdown-menu">
+                      <li id="ComplianceMBK" class="mmenuoption"><a href="javascript:void(0);">Compliance</a></li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online-->
+                        <a href="/posh-training-program"><img class="mr-5" src="/media/organization_logo/navi-logo-sko.jpg"><strong>POSH : Prevention of Sexual Harassment</strong></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu"> 
+                    <a id="HumanSkillM" class="CommmonClick" href="#">Human Skills</a>
+                    <ul id="HumanSkillMDP" class="dropdown-menu">
+                      <li id="HumanSkillMBK" class="mmenuoption"><a href="javascript:void(0);">Human Skills</a></li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online-->
+                        <a href="/org?category=Human Skills&amp;organization=Human Skills"><img class="mr-5" src="/media/organization_logo/navi-logo-sko.jpg"><strong>Human Skills</strong></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu"> 
+                    <a id="CloudM" class="CommmonClick" href="#">Cloud</a>
+                    <ul id="CloudMDP" class="dropdown-menu">
+                      <li id="CloudMBK" class="mmenuoption"><a href="javascript:void(0);">Cloud</a></li>
+                      <li>
+                        <!-- logic for normal category SkillUp Online--><a href="/courses/course-v1:SkillUp+SKOAZ900+2021_Q2/about"><span class="textlogo-navi">Microsoft</span><strong>Microsoft Azure Fundamentals</strong></a> </li>
+                    </ul>
+                  </li>
+                  <!--Five Menu End-->
+  
                 </ul>
+              </div>    
+            </li>
+          </ul>
+          <ul class="nav navbar-nav HeAdSeArCH">
+            <li>
+              <form class="search-form" method="get" action="/courses" id="searchForm">          
+              <div class="input-group">
+                <input type="text" name="search_query" id="search_box" class="form-control search-input" placeholder="Search Courses">
+                <span class="input-group-btn">
+                <button type="submit" id="btnCheck" class="btn search-button"><i class="fa fa-search"></i></button>
+                </span>
               </div>
             </form>
-          </li>
-        </ul>
+            </li>
+            </ul>
+          <ul class="nav navbar-nav MobIlE_MenU">
+            <li><a href="#">For Business</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="nav navbar-nav LoGInMeNU">
+            <li class="MoBiLESeArCH margin-right-auto HideDeskTop">
+              <a id="MaNUtAb" href="javascripts:void(0);"><img src="assets/images/SearchIcon.svg"></a>
+            </li>
+  
+            <li class="LogiN_BTN"><a href="javascripts:void(0);">LOGIN</a></li>
+            <li class="SiGnUPfREE"><a href="javascripts:void(0);">SIGNUP <span>FOR FREE</span></a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 </div>
+<script src="${static.url("js/jquery-2.2.4.min.js")}"></script>
+<script src="${static.url("js/bootstrap.min.js")}"></script>
+<script src="${static.url("js/custom_new.js")}"></script>
+
 <script>
   // JavaScript to freeze dropdown on click and remove freeze on document click
   var dropdown = document.getElementById('myDropdown');

@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+/* CSS Document */
+/*style Guid*/
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+body,html{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.BrKBlU{
+    color: #04313D;
+}
+.LTBlaK{
+    color: #333;
+}
+.TxtBolD{
+    font-weight: 600;
+}
+.Txt12PX{
+    font-size: 12px !important;
+    letter-spacing: 0.4px !important;
+}
+.MrGBTM4{
+    margin-bottom: 4px !important;
+}
+.MrGBTM12{
+    margin-bottom: 12px !important;
+}
+.BlaCK_ColoR{
+    background-color: #000000;
+}
+.NoMaRgIN{
+    margin-bottom: 0px !important;
+}
+.White_BG{
+ background-color: #ffffff !important;   
+}
+.Neutral_BG5{
+ background-color: #e1e7ec !important;   
+}
+.Neutral_BG2{
+    background-color: #606b7a !important;      
+}
+
+.White_CLR2{
+    color: #fff !important
+}
+
+
+
+.Primary01_Blue {
+    background: #04313d;
+}
+
+.Primary02_Blue {
+    background: #215477 !important;
+}
+
+.Primary03_Blue {
+    background: #26708e;
+}
+
+.Primary04_Blue {
+    background: #3685c6;
+}
+
+.Primary05_Blue {
+    background: #66a3d6;
+}
+
+.Primary06_Blue {
+    background: #acd5f4;
+}
+
+.Primary07_Blue {
+    background: #ebf8ff;
+}
+
+.Neutral_01 {
+    background: #212934;
+}
+
+.Neutral_02 {
+    background: #606b7a;
+}
+
+.Neutral_03 {
+    background: #8995a6;
+}
+
+.Neutral_04 {
+    background: #b9c4ce;
+}
+
+.Neutral_05 {
+    background: #e1e7ec;
+}
+
+.Neutral_06 {
+    background: #f8f9fa;
+}
+
+.Accent_BlueGreen01 {
+    background: #044150;
+}
+
+.Accent_BlueGreen02 {
+    background: #1f655e;
+}
+
+.Accent_BlueGreen03 {
+    background: #309187;
+}
+
+.Accent_BlueGreen04 {
+    background: #42aea3;
+}
+
+.Accent_BlueGreen05 {
+    background: #73d7d3;
+}
+
+.Accent_BlueGreen06 {
+    background: #aaeeeb;
+}
+
+.Accent_BlueGreen07 {
+    background: #e8fffe;
+}
+
+.Accent_Green01 {
+    background: #17523a;
+}
+
+.Accent_Green02 {
+    background: #1f7643;
+}
+
+.Accent_Green03 {
+    background: #2d9c5b;
+}
+
+.Accent_Green04 {
+    background: #40c075;
+}
+
+.Accent_Green05 {
+    background: #aaedc2;
+}
+
+.Accent_Green06 {
+    background: #e4fced;
+}
+
+.Accent_Red01 {
+    background: #60191a;
+}
+
+.Accent_Red02 {
+    background: #881c1f;
+}
+
+.Accent_Red03 {
+    background: #b62226;
+}
+
+.Accent_Red04 {
+    background: #da3336;
+}
+
+.Accent_Red05 {
+    background: #e26567;
+}
+
+.Accent_Red06 {
+    background: #fce8e8;
+}
+
+.Accent_Yellow01 {
+    background: #85580e;
+}
+
+.Accent_Yellow02 {
+    background: #ac7720;
+}
+
+.Accent_Yellow03 {
+    background: #ce8c00;
+}
+
+.Accent_Yellow04 {
+    background: #f9c654;
+}
+
+.Accent_Yellow05 {
+    background: #ffebbd;
+}
+
+.Accent_Yellow06 {
+    background: #fff9eb;
+}
+
+.pale-grey {
+    background: #f8f9fa;
+}
+
+.evergreen {
+    background: #04313d;
+}
+
+
+/***Text color**/
+
+.Primary01_Blue-text {
+    color: #04313d;
+}
+
+.Primary02_Blue-text {
+    color: #215477;
+}
+
+.Primary03_Blue-text {
+    color: #26708e;
+}
+
+.Primary04_Blue-text {
+    color: #3685c6 !important;
+}
+
+.Primary05_Blue-text {
+    color: #66a3d6;
+}
+
+.Primary06_Blue-text {
+    color: #acd5f4;
+}
+
+.Primary07_Blue-text {
+    color: #ebf8ff;
+}
+
+.Neutral_01-text {
+    color: #212934;
+}
+
+.Neutral_02-text {
+    color: #606b7a !important;
+}
+
+.Neutral_03-text {
+    color: #8995a6;
+}
+
+.Neutral_04-text {
+    color: #b9c4ce;
+}
+
+.Neutral_05-text {
+    color: #e1e7ec;
+}
+
+.Neutral_06-text {
+    color: #f8f9fa;
+}
+
+.Accent_BlueGreen01-text {
+    color: #044150;
+}
+
+.Accent_BlueGreen02-text {
+    color: #1f655e;
+}
+
+.Accent_BlueGreen03-text {
+    color: #309187;
+}
+
+.Accent_BlueGreen04-text {
+    color: #42aea3;
+}
+
+.Accent_BlueGreen05-text {
+    color: #73d7d3;
+}
+
+.Accent_BlueGreen06-text {
+    color: #aaeeeb;
+}
+
+.Accent_BlueGreen07-text {
+    color: #e8fffe;
+}
+
+.Accent_Green01-text {
+    color: #17523a;
+}
+
+.Accent_Green02-text {
+    color: #1f7643;
+}
+
+.Accent_Green03-text {
+    color: #2d9c5b;
+}
+
+.Accent_Green04-text {
+    color: #40c075;
+}
+
+.Accent_Green05-text {
+    color: #aaedc2;
+}
+
+.Accent_Green06-text {
+    color: #e4fced;
+}
+
+.Accent_Red01-text {
+    color: #60191a;
+}
+
+.Accent_Red02-text {
+    color: #881c1f;
+}
+
+.Accent_Red03-text {
+    color: #b62226;
+}
+
+.Accent_Red04-text {
+    color: #da3336;
+}
+
+.Accent_Red05-text {
+    color: #e26567;
+}
+
+.Accent_Red06-text {
+    color: #fce8e8;
+}
+
+.Accent_Yellow01-text {
+    color: #85580e;
+}
+
+.Accent_Yellow02-text {
+    color: #ac7720;
+}
+
+.Accent_Yellow03-text {
+    color: #ce8c00;
+}
+
+.Accent_Yellow04-text {
+    color: #f9c654;
+}
+
+.Accent_Yellow05-text {
+    color: #ffebbd;
+}
+
+.Accent_Yellow06-text {
+    color: #fff9eb;
+}
+
+.pale-grey-text {
+    color: #f8f9fa;
+}
+
+.evergreen-text {
+    color: #04313d;
+}
+
+.textcolorwht{
+ color: #fff;
+}
+
+.btn-NacCoM,
+.btn-NacCoM:hover{
+    background: #2C2E35;
+    padding:14px 9px;
+    border-radius: 0px;
+    color: #FDC04B; 
+    font-size: 16px;
+      text-transform: uppercase;
+    font-weight: 700;
+}
+
+/**/
+
+
+.H1-Reg {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 6rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+}
+.H1-Bold {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 6rem;
+ font-weight: 600;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+}
+.H1-Light {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 6rem;
+ font-weight: 300;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+}
+
+
+.H2-Reg {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 3.75rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+}
+
+.H2-Bold {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 3.75rem;
+ font-weight: 600;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+}
+.H2-Light {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 3.75rem;
+ font-weight: 300;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+}
+
+.Text-Style-3 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 2.75rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #111820;
+}
+
+.M--H3-Big-Headline-44-Regular {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 2.75rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+}
+
+.M-H3-Big-Headline-44-Regular {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 2.75rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+}
+
+.Text-Style-4 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 2rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.25px;
+ text-align: left;
+ color: #111820;
+}
+
+.M---H4-Small-Headline-32-Regular {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 2rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.25px;
+}
+
+.M-H4-Small-Headline-32-Regular {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 2rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.25px;
+}
+
+.Text-Style-6 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.5rem;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #111820;
+}
+
+.M-H5A-24-Bold {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.5rem;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+}
+
+.M-H5A-24-Bold-Case-Sentence-Letter-spacing-0 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.5rem;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+}
+
+.Text-Style-5 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.5rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #111820;
+}
+
+.M-H5-24-Regular {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.5rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+}
+
+.M-H5-24-Regular-Case-Sentence-Letter-spacing-0 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.5rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+}
+
+.M-Subtitle1A---18-Medium {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.125rem;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.15px;
+}
+
+.M-Subtitle1A---18-Medium-Case-Sentence-Letter-spacing-015 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.125rem;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.15px;
+}
+
+.M-Subtitle1B-or-Buttons---18-Regular-Case-Sentence-Letter-spacing-015 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.125rem;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.2;
+ letter-spacing: 0.15px;
+}
+
+.Subtitle2A-M-Link---18-Regular-Case-Sentence-Letter-spacing-015 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.125rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.15px;
+}
+
+.M-Bodycopy-3---16-Bold {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1rem;
+ font-weight: 600;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.4;
+ letter-spacing: 0.15px;
+}
+
+.M-Bodycopy-2---16-Med-Case-Sentence-Letter-spacing-015 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1rem;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.4;
+ letter-spacing: 0.15px;
+}
+
+.M-Bodycopy-1---16-Regular-Case-Sentence-Letter-spacing-015 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.4;
+ letter-spacing: 0.15px;
+}
+
+.M-Bodycopy-Link---16-Regular-Case-Sentence-Letter-spacing-015 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.15px;
+}
+
+.M-List-2---16-Regular-Case-Sentence-Letter-spacing-015 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.4;
+ letter-spacing: 0.15px;
+}
+
+.Bodycopy-1---16-Regular-Case-Sentence-Letter-spacing-015-2-2-2 {
+ font-family: Roboto;
+ font-size: 1rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.4;
+ letter-spacing: 0.15px;
+}
+
+.Text-Style-7 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.875rem;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.1px;
+ text-align: left;
+ color: #111820;
+}
+
+.M-Subtitle2A---14-Medium-Case-Sentence-Letter-spacing-01 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.875rem;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.1px;
+}
+
+.M-Subtitle2B---14-Regular-Case-Sentence-Letter-spacing-01 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.875rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.1px;
+}
+
+.M-Subtitle2C---14-Regular-Case-All-Caps-Letter-spacing-125 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.875rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 1.25px;
+}
+
+.Subtitle2C-Link---14-Regular {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.875rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.1px;
+}
+
+.M--Caption---12-Regular-Case-Sentence-Letter-spacing-04 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.75rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.4px;
+}
+
+.M-Link---12-Regular-Case-Sentence-Letter-spacing-04 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.75rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 0.4px;
+}
+
+.M-Overline---10-Regular-Case-All-caps-Letter-spacing-15 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.625rem;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: 1.5px;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+.HideDeskTop{
+ display: none !important;
+}
+@media only screen and (max-width: 767px) {
+ .HideDeskTop{
+  display: block !important;
+ }
+}
+
+.PaddTOP2{
+    padding-top: 2px !important;
+}
+.PaddTOP8{
+    padding-top: 8px !important;
+}
+.MARBTM12{
+    margin-bottom: 12px !important;
+}
+.MARBTM16{
+    margin-bottom: 15px !important;
+}
+.PaddTOP12{
+    padding-top: 12px !important;
+}
+.PaddTOP14{
+    padding-top: 14px !important;
+}
+.PaddTOP16{
+    padding-top: 16px !important;
+}
+.PaddBTM16{
+    padding-bottom: 16px !important;
+}
+.PaddBTM12{
+    padding-bottom: 12px !important;
+}
+.PaddBTM24{
+    padding-bottom: 24px !important;
+}
+.PaddTOP19{
+    padding-top: 19px !important;
+}
+.PaddTOP53{
+    padding-top: 53px !important;
+}
+.PlYCOnTAINER{
+    padding: 40px 0 60px 0;
+} 
+.GrY_BG{
+    background-color: #F1F3F8 !important;
+}
+.DaRKGrY_BG{
+    background-color: #E7E7E7 !important;
+}
