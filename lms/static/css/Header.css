@@ -100,6 +100,7 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
   }
   
 
+  /* Basic styling for the dropdown */
   .dropdown {
     position: relative;
     display: inline-block;
@@ -114,13 +115,9 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     z-index: 1;
   }
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Add a class to freeze the dropdown on click */
+  .dropdown:hover .dropdown-content,
   .freeze-dropdown {
-    display: block !important;
+    display: block;
   }
   /* .dropdown:hover .dropdownMenu {
       display: block;
