@@ -25,9 +25,9 @@ from openedx.core.djangolib.markup import HTML, Text
     <nav class="navbar">
       <div class="container-fluid"> 
         <div class="navbar-header">
-          <a id="MaNUtAb" href="javascripts:void(0);"><img src="assets/images/hamburgerblk.svg"></a>
+          <a id="MaNUtAb" href="javascripts:void(0);"><img src="${static.url("images/hamburgerblk.svg")}" alt="${_('hamburgerblk')}" /></a>
           <a class="navbar-brand" href="#">
-            <img src="assets/images/Logo_SkillUpOriginal.svg" align="logo">
+            <img src="${static.url("images/Logo.svg")}" alt="${_('Skillup Online')}" />
           </a>
         </div>
         <div class="navbar-right NAVRiGhT">
@@ -35,11 +35,11 @@ from openedx.core.djangolib.markup import HTML, Text
             <li>
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Category
-                <span><img src="assets/images/dpicons.svg"></span></button>
+                <span><img src="${static.url("images/dpicons.svg")}" alt="${_('dpicons')}" /></span></button>
                 <ul id="MaNUTOP" class="MoBiLeMeNU">
                   <li class="UserDeatiLs ">
-                    <a class="CloseSideBar" href="Javascript:void(0);"><img src="assets/images/closeicon.svg"></a>
-                    <span class="UserImG"><img src="assets/images/NoLoginM.png"></span>
+                    <a class="CloseSideBar" href="Javascript:void(0);"><img src="${static.url("images/closeicon.svg")}" alt="${_('closeicon')}" /></a>
+                    <span class="UserImG"><img src="${static.url("images/NoLoginM.png")}" alt="${_('NoLoginM')}" /></span>
                     <span class="UserName"><a href="Javascript:void(0);">Hello, Log in</a></span>
                   </li>
                   <li>
@@ -70,14 +70,14 @@ from openedx.core.djangolib.markup import HTML, Text
                         <ul id="IBMARTInTBP" class="dropdown-menu multi-level">
                           <li id="IBMARTInTBPBK" class="mmenuoption"><a href="javascript:void(0);">IBM</a></li>
   
-                          <li><a href="/applied-ai-ibm-prof-cert">Professional Certificate in IBM Applied AI</a></li>
-                          <li><a href="/org?category=Artificial Intelligence&amp;organization=IBM&amp;lp=Deep Learning">Deep Learning</a></li>
+                          <li><a href="#">Professional Certificate in IBM Applied AI</a></li>
+                          <li><a href="#">Deep Learning</a></li>
                         </ul>
                       </li>
                       <li>
-                        <!-- logic for normal category SkillUp Online--><a href="/courses/course-v1:SkillUp+SKOAI101+2020_Q4/about"><span class="textlogo-navi">NASSCOM</span><strong>Foundations of Artificial Intelligence (AI) Program</strong></a> </li>
+                        <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">NASSCOM</span><strong>Foundations of Artificial Intelligence (AI) Program</strong></a> </li>
                       <li>
-                        <!-- logic for normal category SkillUp Online--><a href="/org?category=Artificial Intelligence&amp;organization=Professional Program for AI"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for AI</strong></a>
+                        <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for AI</strong></a>
                         <!-- end normal category -->
                       </li>
                     </ul>
@@ -92,15 +92,15 @@ from openedx.core.djangolib.markup import HTML, Text
                         <!-- logic for normal category SkillUp Online--><a id="DatASCIenCEIBM" class="CommmonClick" href="#"><span class="textlogo-navi">IBM</span><strong>IBM</strong></a>
                         <ul id="DatASCIenCEIBMDP" class="dropdown-menu multi-level">
                           <li id="DatASCIenCEIBMDPBK" class="mmenuoption"><a href="javascript:void(0);">IBM</a></li>
-                          <li><a href="/datascience-ibm-prof-cert">Professional Certificate in IBM Data Science</a></li>
-                          <li><a href="/org?category=Data Science&amp;organization=IBM&amp;lp=Applied Data Science with Python">Applied Data Science with Python</a></li>
-                          <li><a href="/org?category=Data Science&amp;organization=IBM&amp;lp=Applied Data Science with R">Applied Data Science with R</a></li>
-                          <li><a href="/org?category=Data Science&amp;organization=IBM&amp;lp=Data Science for Business">Data Science for Business</a></li>
-                          <li><a href="/org?category=Data Science&amp;organization=IBM&amp;lp=Data Science Foundation">Data Science Foundation</a></li>
+                          <li><a href="#">Professional Certificate in IBM Data Science</a></li>
+                          <li><a href="#">Applied Data Science with Python</a></li>
+                          <li><a href="#">Applied Data Science with R</a></li>
+                          <li><a href="#">Data Science for Business</a></li>
+                          <li><a href="#">Data Science Foundation</a></li>
                         </ul>
                       </li>
                       <li>
-                        <!-- logic for normal category SkillUp Online--><a href="/org?category=Data Science&amp;organization=Professional Program for Data Science"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for Data Science</strong></a>
+                        <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for Data Science</strong></a>
                         <!-- end normal category -->
                       </li>
                     </ul>
@@ -115,20 +115,20 @@ from openedx.core.djangolib.markup import HTML, Text
                           <!-- logic for normal category SkillUp Online--><a id="BiGDaTaIBM" class="CommmonClick" href="#"><span class="textlogo-navi">IBM</span><strong>IBM</strong></a>
                           <ul id="BiGDaTaIBMDP" class="dropdown-menu multi-level">
                             <li id="BiGDaTaIBMDPBK" class="mmenuoption"><a href="javascript:void(0);">IBM</a></li>
-                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Hadoop Programming">Hadoop Programming</a></li>
-                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Hadoop Fundamentals">Hadoop Fundamentals</a></li>
-                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Big Data Fundamentals">Big Data Fundamentals</a></li>
-                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Data Management with IBM">Data Management with IBM</a></li>
-                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Spark Fundamentals">Spark Fundamentals</a></li>
-                            <li><a href="/org?category=Big Data&amp;organization=IBM&amp;lp=Cognitive Analytics with IBM">Cognitive Analytics with IBM</a></li>
+                            <li><a href="#">Hadoop Programming</a></li>
+                            <li><a href="#">Hadoop Fundamentals</a></li>
+                            <li><a href="#">Big Data Fundamentals</a></li>
+                            <li><a href="#">Data Management with IBM</a></li>
+                            <li><a href="#">Spark Fundamentals</a></li>
+                            <li><a href="#">Cognitive Analytics with IBM</a></li>
                           </ul>
                         </li>
                         <li>
-                          <!-- logic for normal category SkillUp Online--><a href="/org?category=Big Data&amp;organization=Foundational BDA Program"><span class="textlogo-navi">NASSCOM</span><strong>Foundational BDA Program</strong></a>
+                          <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">NASSCOM</span><strong>Foundational BDA Program</strong></a>
                           <!-- end normal category -->
                         </li>
                         <li>
-                          <!-- logic for normal category SkillUp Online--><a href="/org?category=Big Data&amp;organization=Professional Program for Big Data"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for Big Data</strong></a>
+                          <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">Microsoft</span><strong>Professional Program for Big Data</strong></a>
                           <!-- end normal category -->
                         </li>
                       </ul>
@@ -140,7 +140,7 @@ from openedx.core.djangolib.markup import HTML, Text
                     <ul id="CYbeRSecuritYDP" class="dropdown-menu">
                       <li id="CYbeRSecuritYDPBK" class="mmenuoption"><a href="javascript:void(0);">CyberSecurity</a></li>
                       <li>
-                        <!-- logic for normal category SkillUp Online--><a href="/org?category=CyberSecurity&amp;organization=CyberSecurity"><span class="textlogo-navi">NASSCOM</span><strong>CyberSecurity</strong></a>
+                        <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">NASSCOM</span><strong>CyberSecurity</strong></a>
                         <!-- end normal category -->
                       </li>
                     </ul>
@@ -153,7 +153,7 @@ from openedx.core.djangolib.markup import HTML, Text
                     <ul id="InTERNEtIOTDP" class="dropdown-menu">
                       <li id="InTERNEtIOTBK" class="mmenuoption"><a href="javascript:void(0);">Internet of Things (IoT)</a></li>
                       <li>
-                        <!-- logic for normal category SkillUp Online--><a href="/org?category=Internet of Things (IoT)&amp;organization=Foundational IOT Program"><span class="textlogo-navi">NASSCOM</span><strong>Foundational IOT Program</strong></a>
+                        <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">NASSCOM</span><strong>Foundational IOT Program</strong></a>
                         <!-- end normal category -->
                       </li>
                     </ul>
@@ -163,7 +163,7 @@ from openedx.core.djangolib.markup import HTML, Text
                     <ul id="BlockchainDP" class="dropdown-menu">
                       <li id="BlockchainBK" class="mmenuoption"><a href="javascript:void(0);">Blockchain</a></li>
                       <li>
-                        <!-- logic for normal category SkillUp Online--><a href="/org?category=Blockchain&amp;organization=Blockchain for Developers"><span class="textlogo-navi">IBM</span><strong>Blockchain for Developers</strong></a>
+                        <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">IBM</span><strong>Blockchain for Developers</strong></a>
                         <!-- end normal category -->
                       </li>
                     </ul>
@@ -194,7 +194,7 @@ from openedx.core.djangolib.markup import HTML, Text
                       <li id="HumanSkillMBK" class="mmenuoption"><a href="javascript:void(0);">Human Skills</a></li>
                       <li>
                         <!-- logic for normal category SkillUp Online-->
-                        <a href="/org?category=Human Skills&amp;organization=Human Skills"><img class="mr-5" src="/media/organization_logo/navi-logo-sko.jpg"><strong>Human Skills</strong></a>
+                        <a href="#"><img class="mr-5" src="/media/organization_logo/navi-logo-sko.jpg"><strong>Human Skills</strong></a>
                       </li>
                     </ul>
                   </li>
@@ -203,7 +203,7 @@ from openedx.core.djangolib.markup import HTML, Text
                     <ul id="CloudMDP" class="dropdown-menu">
                       <li id="CloudMBK" class="mmenuoption"><a href="javascript:void(0);">Cloud</a></li>
                       <li>
-                        <!-- logic for normal category SkillUp Online--><a href="/courses/course-v1:SkillUp+SKOAZ900+2021_Q2/about"><span class="textlogo-navi">Microsoft</span><strong>Microsoft Azure Fundamentals</strong></a> </li>
+                        <!-- logic for normal category SkillUp Online--><a href="#"><span class="textlogo-navi">Microsoft</span><strong>Microsoft Azure Fundamentals</strong></a> </li>
                     </ul>
                   </li>
                   <!--Five Menu End-->
@@ -214,11 +214,11 @@ from openedx.core.djangolib.markup import HTML, Text
           </ul>
           <ul class="nav navbar-nav HeAdSeArCH">
             <li>
-              <form class="search-form" method="get" action="/courses" id="searchForm">          
+              <form class="search-form" method="get" action="#" id="searchForm">          
               <div class="input-group">
                 <input type="text" name="search_query" id="search_box" class="form-control search-input" placeholder="Search Courses">
                 <span class="input-group-btn">
-                <button type="submit" id="btnCheck" class="btn search-button"><i class="fa fa-search"></i></button>
+                <button type="submit" id="btnCheck" class="btn search-button"><img src="${static.url("images/Search.svg")}" alt="${_('Search')}" /></button>
                 </span>
               </div>
             </form>
@@ -246,8 +246,8 @@ from openedx.core.djangolib.markup import HTML, Text
 <script src="${static.url("js/bootstrap.min.js")}"></script>
 <script src="${static.url("js/custom_new.js")}"></script>
 
-<script>
-  // JavaScript to freeze dropdown on click and remove freeze on document click
+<!-- <script>
+ 
   var dropdown = document.getElementById('myDropdown');
   var dropdownContent = document.getElementById('dropdownContent');
 
@@ -259,4 +259,4 @@ from openedx.core.djangolib.markup import HTML, Text
   document.addEventListener('click', function() {
     dropdownContent.classList.remove('freeze-dropdown');
   });
-</script>
+</script> -->
