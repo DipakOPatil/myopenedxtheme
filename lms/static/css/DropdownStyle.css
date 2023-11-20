@@ -68,10 +68,10 @@
   margin: 0px;
   padding-bottom: 0px;
 }
-.dropdown-menu.dropdown-cat li:hover a {
+/* .dropdown-menu.dropdown-cat li:hover a {
   padding-bottom: 0px;
   display: block;
-}
+} */
 .CatMENU {
   border-radius: 8px;
   border: solid 1px #bdbdbd;
