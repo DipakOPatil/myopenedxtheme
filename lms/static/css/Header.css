@@ -191,10 +191,10 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     transition: transform 0.5s linear;
   }
   
-  .show img {
+  /* .show img {
     transform: rotate(-180deg);
     transition: transform 0.5s linear;
-  }
+  } */
   
   .SigNUP li a {
     padding: 12px 20px !important;
