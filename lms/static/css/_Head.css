@@ -803,7 +803,7 @@ header .navbar-nav.LoGInMeNU{
     font-family: "Montserrat", sans-serif;
   }
   .NAVRiGhT{
-    display: block;
+    display: flex;
     font-family: "Montserrat", sans-serif;
   }
   .footerMenU_InnER {
