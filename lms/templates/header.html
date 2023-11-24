@@ -2,8 +2,9 @@
 <%page expression_filter="h"/>
 <%namespace name='static' file='static_content.html'/>
 <link rel="stylesheet" href="${static.url("css/NewHeader.css")}">
-<!-- <link rel="stylesheet" href="${static.url("css/Header.css")}">
 <link rel="stylesheet" href="${static.url("css/DropdownStyle.css")}">
+<!-- <link rel="stylesheet" href="${static.url("css/Header.css")}">
+
 <link rel="stylesheet" href="${static.url("css/_common.css")}">
 <link rel="stylesheet" href="${static.url("css/_Head.css")}"> -->
 <link rel="stylesheet" href="${static.url("css/bootstrap.min.css")}">
@@ -35,7 +36,7 @@ from openedx.core.djangolib.markup import HTML, Text
             <div class="navbar-right NAVRiGhT">
               <ul class="nav navbar-nav CaTeGoRY_MeNU">
                 <li>
-                  <div class="dropdown open">
+                  <div class="dropdown">
                     <a class="btn dropdown-toggle" id="NavMegamenu" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" style="/* display: none; */">Course
                     <span><img src="${static.url("images/dpicons.svg")}" alt="${_('dpicons')}" /></span> </a>
                     <ul id="MaNUTOP" class="MoBiLeMeNU">
