@@ -85,7 +85,7 @@ header .navbar-nav{
   align-items: center;
 
 }*/
-.courseNav button:hover {
+.courseNav:hover button {
   cursor: pointer;
   display: block;
   color: #04313d;
