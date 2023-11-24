@@ -85,6 +85,23 @@ header .navbar-nav{
   align-items: center;
 
 }*/
+.courseNav:hover button {
+  cursor: pointer;
+  display: block;
+  color: #04313d;
+  background-color: #e0e0e0;
+  /* border: solid 1px #bdbdbd; */
+  border-radius: 8px 8px 0 0;
+}
+.courseNav.open {
+  cursor: pointer;
+  display: block;
+  color: #04313d;
+  background-color: #e0e0e0;
+  /* border: solid 1px #bdbdbd; */
+  border-radius: 8px 8px 0 0;
+}
+
 .navbar-nav > li.SigNUP a{
   padding:  0px 0px 0px 12px; 
  /* background-color: #881c1f;
