@@ -39,7 +39,7 @@ from openedx.core.djangolib.markup import HTML, Text
                     <a class="btn dropdown-toggle" id="NavMegamenu" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course
                     <span><img src="${static.url('images/dpicons.svg')}"></span> </a>
                     <ul id="MaNUTOP" class="MoBiLeMeNU">
-                      <li class="UserDeatiLs ">
+                      <!-- <li class="UserDeatiLs ">
                         <a class="CloseSideBar" href="Javascript:void(0);"><img src="${static.url('images/closeicon.svg')}"></a>
                         % if user.is_authenticated():
     
@@ -51,8 +51,8 @@ from openedx.core.djangolib.markup import HTML, Text
                     <span class="UserImG"><img
                             src="${static.url('images/NoLoginM.png')}"></span>
                     <span class="UserName"><a href="Javascript:void(0);">Hi</a></span>
-                    </li>
-                     %endif  
+                    </li> 
+                     %endif  -->
                       <li>
                         <ul id="MMFRSTMeNU1" class="MMFRSTMeNU">
                           <li id="EXPCaTMENU_pra" class="DPARROW"><!--<a href="Javascript:void(0);">Courses</a> -->
@@ -84,13 +84,14 @@ from openedx.core.djangolib.markup import HTML, Text
                            <div class="Paddbox">
                            <h4 class="MegaMenuHeading">Categories</h4>
                           <ul class="categorylist customscroll dropdown-submenu">
-                              % for d in data:
+                              <!-- % for d in data:
                                 % if not str(d.name).lower() == 'popular':
                                   <li>
                                       <a href="${frontend_url}${d.url}?utm_source=websiteinternal&utm_medium=megamenu&utm_campaign=NA">${d.name}</a>
                                   </li>
                                 % endif
-                              % endfor
+                              % endfor -->
+                              <li>satish 1</li>
                             </ul> 
                           </div>
                        </div>
@@ -178,7 +179,7 @@ from openedx.core.djangolib.markup import HTML, Text
                     <!--First Menu Start-->
                     <li id="MMDroPDoWNMAiNBaCK" class="mainmenuoption"><a href="javascript:void(0);">Categories</a>
                     </li>
-                    % for d in data:
+                    <!-- % for d in data:
                       % if not str(d.name).lower() == 'popular':
                         <li class="dropdown-submenu">
                             <a id="ArtInT" class="CommmonClick" tabindex="-1"
@@ -186,7 +187,8 @@ from openedx.core.djangolib.markup import HTML, Text
     
                         </li>
                       % endif
-                    % endfor
+                    % endfor -->
+                    <li>satish 2</li>
                     </ul>    
                 </li>
               </ul>
@@ -207,52 +209,7 @@ from openedx.core.djangolib.markup import HTML, Text
                 <li><a href="${frontend_url}/contact?utm_source=websiteinternal&utm_medium=header&utm_campaign=NA">Contact us</a></li>
                 <li><a href="${blogLink}?utm_source=websiteinternal&utm_medium=header&utm_campaign=NA">Blog</a></li>
               </ul>
-              % if user.is_authenticated():
-                    <ul class="nav navbar-nav LoGInMeNU">
-                        <li class="hamburger margin-right-auto">
-                            <a id="MaNUtAb" href="javascript:void(0);"><img
-                                    src="${static.url('images/hamburgerblk.svg')}"></a>
-                        </li>
-    
-                        <li class="MoBiLESeArCH margin-right-auto HideDeskTop">
-                            <a href="javascript:void(0);"><img
-                                    src="${static.url('images/SearchIcon.svg')}"></a>
-                        </li>
-    
-                        <li class="SigNUP">
-                            <a href="javascript:void(0);" class="dropdown-toggle" type="button" data-toggle="dropdown">
-                                <!-- <img src="${static.url('skillup_static/images/usericons1.svg')}"> -->
-                                <span class="NOLoginDSK"><img
-                                        src="${static.url('images/NoLogin.png')}"></span>
-                                <span class="NOLoginDSKTXT">${self.real_user.first_name[0].upper()}${self.real_user.last_name[0].upper()}</span>
-                                <!-- <span>John Smith</span> -->
-                                <img class="dPaRoW"
-                                     src="${static.url('images/dpicons.svg')}">
-                                <!-- <img src="${static.url('skillup_static/images/dpiconswht.svg')}"> -->
-                            </a>
-                            <ul class="dropdown-menu Primary02_Blue">
-                                <li class="UsErNmE"><a href="#">Hello ${self.real_user.first_name}
-                                    ${self.real_user.last_name}</a></li>
-                                <li><a href="${reverse('dashboard')}">Dashboard</a></li>
-                                <li><a href="${reverse('learner_profile_new', kwargs={'username': self.real_user.username})}">Profile</a>
-                                </li>
-                                <li><a href="${reverse('account_settings')}">Account</a></li>
-                                <li><a href="/logout_1">Sign Out</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    % else:
-                    <ul class="nav navbar-nav LoGInMeNU">
-                        <li class="MoBiLESeArCH margin-right-auto HideDeskTop">
-                            <a href="javascript:void(0);"><img
-                                    src="${static.url('images/SearchIcon.svg')}"></a>
-                        </li>
-    
-    
-                        <li class="LogiN_BTN"><a href="/login?utm_source=websiteinternal&utm_medium=header&utm_campaign=NA">LOGIN</a></li>
-                        <li class="SiGnUPfREE"><a href="/register${login_query()}?utm_source=websiteinternal&utm_medium=header&utm_campaign=NA">SIGNUP <span>FOR FREE</span></a></li>
-                    </ul>
-                    % endif
+             
                 </div>
              </div>
         </nav>
