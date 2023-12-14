@@ -15,6 +15,7 @@ header .navbar{
 .navbar-nav .dropdown-menu {
   position: absolute;
   float: none;
+  padding: 0;
 }
 .navbar-brand{
   height: 78px;
@@ -460,7 +461,7 @@ footer .footerMenU{
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  margin-left: 12px;
+  /* margin-left: 12px; */
   border: none;
   color: #04313d !important;
   letter-spacing: normal;
