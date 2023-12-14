@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/utility-classes.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/skillup_login.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/skillup_v2.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/Sign-Icon-Free.css">
+	
+</head>
+<body>
+<section class="relative Primary01_Blue spacing-pt40 sinup-v2-banner">
+      <img src="assets/images/Logo-24.png" class="signup-banner-postion" width="400" alt="">
+          <div class="container-fluid pt-0 pb-0">
+            <!-- Section Content -->
+              <div class="section-content breadcrumb-h Left-spacing40 Right-spacing40">
+                    <h3 class="text-white h3-bigheading44 spacing-mt0 spacing-mb28 text-center h3-bigheading44-m">Let’s get started</h3>
+              </div>
+          </div>
+    </section>
+<section class="loginformsection">
+    <div class="container-fluid">
+      <div class="sinup-main-section">
+		 
+		 <div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav sinup-tabs" role="tablist">
+                        <li id="signinlink" role="presentation"><a href="login.html">Login</a></li>
+                        <li role="presentation"><a href="rigister.html" class="active">SIGN UP</a></li>
+
+                    </ul>
+
+
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <div class="singupV2-form">
+                                <div class="spacing-mt60">
+                                    <h4 class="h4-smallheading32 Primary01_Blue-text spacing-mt0 spacing-mb32">Create a
+                                        new account</h4>
+                                     
+                                    <div class="group group-form">
+                                              <div class="form-group spacing-mb20">
+                                                <fieldset>
+                                                    <div class="kickass_field">
+                                                        <input maxlength="30" id="name" type="text" name="name" required="required" class="something" autocomplete="new-password">
+                                                        
+                                                        <lable>Full name</lable>
+                                                        <p class="Neutral_03-text spacing-mb0 spacing-mt12 spacing-ml16">Enter your firstname and lastname. e.g John Smith</p>
+                                                        <div role="alert" class="status message submission-error error-name" tabindex="-1">
+                                                          <div class="message-title"></div>
+                                                          <p class="Accent_Red04-text Error-Messages spacing-mb0 spacing-mt12 spacing-ml16 status message submission-error message-copy error-name"></p>
+                                                        </div>
+                                                        <button type="button" id="name_clear" style="display: none;"> <img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/input_Close.7993a947b34b.svg" class="close-icon" alt=""></button>
+                                                    </div>
+                                                </fieldset>
+                                              </div>
+                                              <div class="form-group spacing-mb20">
+                                                  <fieldset>
+                                                      <div class="kickass_field">
+                                                          <input maxlength="50" id="email" type="text" name="email" required="required" class="something" autocomplete="new-password">
+                                                          <lable>Your email</lable>
+                                                          <div role="alert" class="status message submission-error error-email" tabindex="-1">
+                                                            <div class="message-title"></div>
+                                                            <p class="Accent_Red04-text Error-Messages spacing-mb0 spacing-mt12 spacing-ml16 status message submission-error message-copy error-email"></p>
+                                                          </div>
+                                                          <button type="button" id="email_clear" style="display: none;"><img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/input_Close.7993a947b34b.svg" class="close-icon" alt=""></button>
+                                                      </div>
+                                                  </fieldset>
+                                              </div>
+
+                                              
+
+
+                                              <div class="form-group spacing-mb20">
+                                                <fieldset>
+                                                <div class="kickass_field">
+                                                <input id="password" type="password" name="password" value="" required="" class="something" autocomplete="new-password">
+                                                
+                                                <lable>
+                                                    Set password
+                                                </lable>
+                                                <p class="Neutral_03-text spacing-mb0 spacing-mt12 spacing-ml16">Min 6 chars | Include caps</p>
+                                                <div role="alert" class="status message submission-error error-password" tabindex="-1">
+                                                            <div class="message-title"></div>
+                                                            <p class="Accent_Red04-text Error-Messages spacing-mb0 spacing-mt12 spacing-ml16 status message submission-error message-copy error-password"></p>
+                                                          </div>
+                                                  <button type="button" id="password_clear" style="display: none;"> <img src="assets/images/input_Close.svg" class="close-icon" alt=""></button>
+                                                </div>
+                                                </fieldset>
+                                              </div>
+                                              <div class="form-group">
+                                                <fieldset>
+                                                      <div class="form-group kickass_field">
+                                                        <select name="country" id="country" class="form-control">
+                                                            <option value=""></option>
+                                                        <option value="AF">Afghanistan (&#x202B;افغانستان&#x202C;&lrm;)</option><option value="AL">Albania (Shqipëri)</option><option value="DZ">Algeria (&#x202B;الجزائر&#x202C;&lrm;)</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia (Հայաստան)</option><option value="AW">Aruba</option><option value="AC">Ascension Island</option><option value="AU">Australia</option><option value="AT">Austria (Österreich)</option><option value="AZ">Azerbaijan (Azərbaycan)</option><option value="BS">Bahamas</option><option value="BH">Bahrain (&#x202B;البحرين&#x202C;&lrm;)</option><option value="BD">Bangladesh (বাংলাদেশ)</option><option value="BB">Barbados</option><option value="BY">Belarus (Беларусь)</option><option value="BE">Belgium (België)</option><option value="BZ">Belize</option><option value="BJ">Benin (Bénin)</option><option value="BM">Bermuda</option><option value="BT">Bhutan (འབྲུག)</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina (Босна и Херцеговина)</option><option value="BW">Botswana</option><option value="BR">Brazil (Brasil)</option><option value="IO">British Indian Ocean Territory</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria (България)</option><option value="BF">Burkina Faso</option><option value="BI">Burundi (Uburundi)</option><option value="KH">Cambodia (កម្ពុជា)</option><option value="CM">Cameroon (Cameroun)</option><option value="CA">Canada</option><option value="CV">Cape Verde (Kabu Verdi)</option><option value="BQ">Caribbean Netherlands</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic (République centrafricaine)</option><option value="TD">Chad (Tchad)</option><option value="CL">Chile</option><option value="CN">China (中国)</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros (&#x202B;جزر القمر&#x202C;&lrm;)</option><option value="CD">Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)</option><option value="CG">Congo (Republic) (Congo-Brazzaville)</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Côte d’Ivoire</option><option value="HR">Croatia (Hrvatska)</option><option value="CU">Cuba</option><option value="CW">Curaçao</option><option value="CY">Cyprus (Κύπρος)</option><option value="CZ">Czech Republic (Česká republika)</option><option value="DK">Denmark (Danmark)</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic (República Dominicana)</option><option value="EC">Ecuador</option><option value="EG">Egypt (&#x202B;مصر&#x202C;&lrm;)</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea (Guinea Ecuatorial)</option><option value="ER">Eritrea</option><option value="EE">Estonia (Eesti)</option><option value="SZ">Eswatini</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Islas Malvinas)</option><option value="FO">Faroe Islands (Føroyar)</option><option value="FJ">Fiji</option><option value="FI">Finland (Suomi)</option><option value="FR">France</option><option value="GF">French Guiana (Guyane française)</option><option value="PF">French Polynesia (Polynésie française)</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia (საქართველო)</option><option value="DE">Germany (Deutschland)</option><option value="GH">Ghana (Gaana)</option><option value="GI">Gibraltar</option><option value="GR">Greece (Ελλάδα)</option><option value="GL">Greenland (Kalaallit Nunaat)</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea (Guinée)</option><option value="GW">Guinea-Bissau (Guiné Bissau)</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HN">Honduras</option><option value="HK">Hong Kong (香港)</option><option value="HU">Hungary (Magyarország)</option><option value="IS">Iceland (Ísland)</option><option value="IN">India (भारत)</option><option value="ID">Indonesia</option><option value="IR">Iran (&#x202B;ایران&#x202C;&lrm;)</option><option value="IQ">Iraq (&#x202B;العراق&#x202C;&lrm;)</option><option value="IE">Ireland</option><option value="IM">Isle of Man</option><option value="IL">Israel (&#x202B;ישראל&#x202C;&lrm;)</option><option value="IT">Italy (Italia)</option><option value="JM">Jamaica</option><option value="JP">Japan (日本)</option><option value="JE">Jersey</option><option value="JO">Jordan (&#x202B;الأردن&#x202C;&lrm;)</option><option value="KZ">Kazakhstan (Казахстан)</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="XK">Kosovo</option><option value="KW">Kuwait (&#x202B;الكويت&#x202C;&lrm;)</option><option value="KG">Kyrgyzstan (Кыргызстан)</option><option value="LA">Laos (ລາວ)</option><option value="LV">Latvia (Latvija)</option><option value="LB">Lebanon (&#x202B;لبنان&#x202C;&lrm;)</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya (&#x202B;ليبيا&#x202C;&lrm;)</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania (Lietuva)</option><option value="LU">Luxembourg</option><option value="MO">Macau (澳門)</option><option value="MG">Madagascar (Madagasikara)</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania (&#x202B;موريتانيا&#x202C;&lrm;)</option><option value="MU">Mauritius (Moris)</option><option value="YT">Mayotte</option><option value="MX">Mexico (México)</option><option value="FM">Micronesia</option><option value="MD">Moldova (Republica Moldova)</option><option value="MC">Monaco</option><option value="MN">Mongolia (Монгол)</option><option value="ME">Montenegro (Crna Gora)</option><option value="MS">Montserrat</option><option value="MA">Morocco (&#x202B;المغرب&#x202C;&lrm;)</option><option value="MZ">Mozambique (Moçambique)</option><option value="MM">Myanmar (Burma) (မြန်မာ)</option><option value="NA">Namibia (Namibië)</option><option value="NR">Nauru</option><option value="NP">Nepal (नेपाल)</option><option value="NL">Netherlands (Nederland)</option><option value="NC">New Caledonia (Nouvelle-Calédonie)</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger (Nijar)</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="KP">North Korea (조선 민주주의 인민 공화국)</option><option value="MK">North Macedonia (Северна Македонија)</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway (Norge)</option><option value="OM">Oman (&#x202B;عُمان&#x202C;&lrm;)</option><option value="PK">Pakistan (&#x202B;پاکستان&#x202C;&lrm;)</option><option value="PW">Palau</option><option value="PS">Palestine (&#x202B;فلسطين&#x202C;&lrm;)</option><option value="PA">Panama (Panamá)</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru (Perú)</option><option value="PH">Philippines</option><option value="PL">Poland (Polska)</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar (&#x202B;قطر&#x202C;&lrm;)</option><option value="RE">Réunion (La Réunion)</option><option value="RO">Romania (România)</option><option value="RU">Russia (Россия)</option><option value="RW">Rwanda</option><option value="BL">Saint Barthélemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin (Saint-Martin (partie française))</option><option value="PM">Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">São Tomé and Príncipe (São Tomé e Príncipe)</option><option value="SA">Saudi Arabia (&#x202B;المملكة العربية السعودية&#x202C;&lrm;)</option><option value="SN">Senegal (Sénégal)</option><option value="RS">Serbia (Србија)</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SX">Sint Maarten</option><option value="SK">Slovakia (Slovensko)</option><option value="SI">Slovenia (Slovenija)</option><option value="SB">Solomon Islands</option><option value="SO">Somalia (Soomaaliya)</option><option value="ZA">South Africa</option><option value="KR">South Korea (대한민국)</option><option value="SS">South Sudan (&#x202B;جنوب السودان&#x202C;&lrm;)</option><option value="ES">Spain (España)</option><option value="LK">Sri Lanka (ශ්&zwj;රී ලංකාව)</option><option value="SD">Sudan (&#x202B;السودان&#x202C;&lrm;)</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SE">Sweden (Sverige)</option><option value="CH">Switzerland (Schweiz)</option><option value="SY">Syria (&#x202B;سوريا&#x202C;&lrm;)</option><option value="TW">Taiwan (台灣)</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand (ไทย)</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia (&#x202B;تونس&#x202C;&lrm;)</option><option value="TR">Turkey (Türkiye)</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="VI">U.S. Virgin Islands</option><option value="UG">Uganda</option><option value="UA">Ukraine (Україна)</option><option value="AE">United Arab Emirates (&#x202B;الإمارات العربية المتحدة&#x202C;&lrm;)</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan (Oʻzbekiston)</option><option value="VU">Vanuatu</option><option value="VA">Vatican City (Città del Vaticano)</option><option value="VE">Venezuela</option><option value="VN">Vietnam (Việt Nam)</option><option value="WF">Wallis and Futuna (Wallis-et-Futuna)</option><option value="EH">Western Sahara (&#x202B;الصحراء الغربية&#x202C;&lrm;)</option><option value="YE">Yemen (&#x202B;اليمن&#x202C;&lrm;)</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option><option value="AX">Åland Islands</option></select>
+                                                      </div>
+                                                </fieldset>
+                                              </div>
+                                             
+                                        <div class="form-group spacing-mb40">
+                                            <input class="inp-cbx" id="cbx2" name="news_letters" type="checkbox" checked="" style="display: none">
+                                            <label class="cbx" for="cbx2">
+                                            <span>
+                                            <svg width="12px" height="10px" viewBox="0 0 12 10">
+                                              <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </svg></span><span class="Bodycopy-1 Neutral_01-text checkbox-text">I want to receive special offers, regular updates and learning tips</span></label>
+                                        </div>
+                                            <div class="form-group spacing-mb40 pull-right">
+                                              <input type="submit" value="Sign Up" id="register_in" class="buttonD1-skillupv2">
+                                          </div>
+                                     <!--
+                                              <div>
+                                              <fieldset>
+                                              <div class="checkbox checkbox-info checkbox-circle" id="field-tos">
+                                                <input id="tos-yes" type="checkbox" name="terms_of_service" value="true" required aria-required="true" />
+                                                <label for="tos-yes">I agree to the<a href="/tos" class="new-vp ml-10" tabindex="-1">Terms of Service</a> & <a href="/privacy" class="new-vp ml-10" tabindex="-1">Privacy Policy.</a></label>
+
+                                              </div>
+                                              </fieldset>
+                                              -->
+                                        
+        <!-- 
+        <div class="checkbox checkbox-info">
+            <input id="checkbox9" type="checkbox" name="news_letters" value="true" checked>
+            <label for="checkbox9">
+                                                I agree to receiving emails with exciting offers & personalized recommendations.</a>
+                                              </label>
+        </div>
+        -->
+        </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="divided-bdr"></div>
+        <h5 class="h5-regular24 evergreen-text spacing-mt40 spacing-mb20">OR sign up using your social account</h5>
+
+        <div class="social-section">
+
+            <a href="#" type="submit" class="Social" onclick="thirdPartySignin(event, '/auth/login/facebook-in/?auth_entry=register&amp;next=%2Fdashboard%3Futm_source%3Dwebsiteinternal');">
+                    <i class="IconsSmallSocial_FB2"><img src="assets/images/Social_FB.svg" alt=""></i>
+                <span class="FACEBOOK2">FACEBOOK</span> 
+              </a> 
+
+            <a href="#" type="submit" class="Social" onclick="thirdPartySignin(event, '/auth/login/google-in-oauth2/?auth_entry=register&amp;next=%2Fdashboard%3Futm_source%3Dwebsiteinternal');">
+                    <i class="IconsSmallSocial_FB2"><img src="assets/images/Social_Google.svg" alt=""></i>	
+                <span class="FACEBOOK2">GOOGLE</span> 
+              </a> 
+
+            <a href="#" type="submit" class="Social" onclick="thirdPartySignin(event, '/auth/login/linkedin-in-oauth2/?auth_entry=register&amp;next=%2Fdashboard%3Futm_source%3Dwebsiteinternal');">
+                    <i class="IconsSmallSocial_FB2"><img src="assets/images/Social_LinkedIn.svg" alt=""></i>
+                <span class="FACEBOOK2">LINKEDIN</span> 
+              </a> 
+
+            <a href="#" type="submit" class="Social" onclick="thirdPartySignin(event, '/auth/login/azuread-in-oauth2/?auth_entry=register&amp;next=%2Fdashboard%3Futm_source%3Dwebsiteinternal');">
+                    <i class="IconsSmallSocial_FB2"><img src="assets/images/Social_Microsoft.svg" alt=""></i>	
+                <span class="FACEBOOK2">MICROSOFT</span> 
+              </a> 
+        </div>
+
+        <p class="Bodycopy-1 Neutral_01-text spacing-mt44 font-w-600">Already have an account?
+            <a href="/login" class="Primary04_Blue-text font-w-400 underline">Log in</a></p>
+        <span class="Bodycopy-Link Neutral_01-text spacing-mt20">By signing up, you agree to our
+                                    <a href="https://stage.skillup.online/tos" class="Primary04_Blue-text underline" tabindex="-1">Terms of Service</a> and <a href="https://stage.skillup.online/privacy" class="Primary04_Blue-text underline" tabindex="-1">Privacy Policy</a>
+                                </span>
+
+
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-5">
+          <!--Sign up for free start-->
+          <div class="signupFree">
+            <p class="pb_40"><strong>Sign up for free</strong><br>to access a range of professional courses and upskill your market demand</p>
+              <ul>
+                <li><img src="assets/images/Sign-Icon-List.svg" alt="tick"> Learn from the industry experts</li>
+                <li><img src="assets/images/Sign-Icon-List.svg" alt="tick"> Learn at your own pace</li>
+                <li><img src="assets/images/Sign-Icon-List.svg" alt="tick"> Access video tutorials</li>
+                <li><img src="assets/images/Sign-Icon-List.svg" alt="tick"> Participate in discussion forums</li>
+              </ul>
+              <div class="clearfix"></div>
+              <p class="handiconDiv">
+              <img src="assets/images/handicon.png" alt="SignUp_Banner" width="118px" height="138px">
+            </p>
+          </div>
+           <!--Sign up for free end-->
+
+          <!-- <img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/SignUp_Banner@2x.5a9bd0c06e9c.png" class="singupbanner-img" alt="" />
+            <div class="signup-right-banner-main">
+                <div class="signup-right-banner">
+                    <h5><span class="Accent_Yellow05-text">Sign up for free</span> <br> to access a range of professional courses and upskill your market demand</h5>
+                    <ul class="Learn-industry-experts">
+                        <li>
+                            <div class="img-section"><img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/LightBG_Courses.1087aecdb320.svg" alt="" /></div>
+                            <div class="text-learn">
+                                <h6>Learn from industry experts</h6>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="img-section"><img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/LightBG_Pace.e5a70cb87a3e.svg" alt="" /></div>
+                            <div class="text-learn">
+                                <h6>Learn at your own pace</h6>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="img-section"><img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/LightBG_video.0efffd8e43dc.svg" alt="" /></div>
+                            <div class="text-learn">
+                                <h6>Access video tutorials</h6>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="img-section"><img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/LightBG_forum.9a1a99791c6d.svg" alt="" /></div>
+                            <div class="text-learn">
+                                <h6>Participate in discussion forums</h6>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>-->
+        </div>
+        </div>
+        </div>
+
+
+        </div>
+
+
+        </div>
+        </section>
+</body>
+</html>

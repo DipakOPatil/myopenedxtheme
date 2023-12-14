@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="${static.url("css/login/bootstrap.min.css")}">
+	<link rel="stylesheet" href="${static.url("css/login/utility-classes.css")}">
+	<link rel="stylesheet" href="${static.url("css/login/skillup_login.css")}">
+	<link rel="stylesheet" href="${static.url("css/login/skillup_v2.css")}">
+	
+</head>
+<body>
+<section class="relative Primary01_Blue spacing-pt40 sinup-v2-banner">
+      <img src="assets/images/Logo-24.png" class="signup-banner-postion" width="400" alt="">
+          <div class="container-fluid pt-0 pb-0">
+            <!-- Section Content -->
+              <div class="section-content breadcrumb-h Left-spacing40 Right-spacing40">
+                    <h3 class="text-white h3-bigheading44 spacing-mt0 spacing-mb28 text-center h3-bigheading44-m">Let’s get started</h3>
+              </div>
+          </div>
+    </section>
+<section class="loginformsection">
+    <div class="container-fluid">
+      <div class="sinup-main-section">
+		 
+		 <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav sinup-tabs" role="tablist">
+    <li role="presentation"><a href="login.html" class="active">LOGIN</a></li>
+    <li id="signuplink" role="presentation"><a href="register.html">SIGN UP</a></li>
+  </ul>
+
+
+	<div class="row">
+		 <div class="col-md-8 col-sm-12">
+			 <div class="singupV2-form">
+			 <div class="spacing-mt60">
+			 <h4 class="h4-smallheading32 Primary01_Blue-text spacing-mt0 spacing-mb32">Log in to SkillUp Online</h4>
+				 <div class="NotificationTypeError spacing-mb16 hidden" role="alert">
+                      <div class="fielderror"><span class="error">!</span></div>
+                      You can choose to enrol for the individual course. 
+                    </div>
+					<form role="form" id="login-form" method="post" data-remote="true" action="/login_ajax" novalidate="">
+						<div class="group group-form">
+							<div role="alert" class="NotificationTypeError spacing-mb16 status message">
+								<div class="fielderror"><span class="error">!</span></div><div class="fiederror message-title">We're Sorry, SkillUp Online accounts are unavailable currently</div>
+						</div>
+						<div role="alert" class="NotificationTypeError spacing-mb16 status message submission-error" tabindex="-1">
+							<div class="fielderror"><span class="error">!</span></div><div class="fiederror message-title">Sorry, we couldn't log you in. Please re-check your email or password. </div>
+						</div>
+						<div role="alert" class="third-party-signin message" tabindex="-1">
+							<p class="instructions"> </p>
+						</div>
+						<p class="instructions sr">
+							Please provide the following information to log into your SkillUp Online account. Required fields are noted by <strong class="indicator">bold text and an asterisk (*)</strong>.
+						</p>
+						<div class="form-group spacing-mb20">
+							<fieldset>
+							<div class="kickass_field">
+							<input maxlength="50" type="text" id="email" name="email" class="something" value="" required="" autocomplete="new-password" aria-described-by="email-tip">
+							<lable>
+                              Your email
+              </lable>
+								<p class="Accent_Red04-text Error-Messages spacing-mb0 spacing-mt12 spacing-ml16 status message submission-error invalid-email">Please check the format of your email address</p>
+								</div>
+                <button type="button" id="email_clear" style="display: none;"><img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/input_Close.7993a947b34b.svg" class="close-icon" alt=""></button>
+								</fieldset>
+							</div>
+
+
+							<div class="form-group spacing-mb20">
+							<fieldset>
+							<div class="kickass_field">
+								<input id="password" type="password" name="password" class="something" autocomplete="new-password" value="" required="">
+                
+								<lable>
+                              		Enter password
+                           		</lable>
+                <button type="button" id="password_clear" style="display: none;"><img src="/static/Openedx-theme-ironwood-india/skillup_static/images/ibm-skillup-v2/signup/input_Close.7993a947b34b.svg" class="close-icon" alt=""></button>
+							</div>
+							</fieldset>
+						</div>
+						<div class="form-group spacing-mb40">				
+							<input class="inp-cbx" id="cbx2" type="checkbox" style="display: none">
+							<label class="cbx" for="cbx2">
+								<span>
+								<svg width="12px" height="10px" viewBox="0 0 12 10">
+								<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg></span><span class="Bodycopy-1 Neutral_01-text">Remember me</span></label>
+							<a href="/password_reset" class="underline pull-right Primary04_Blue-text Link-12-Regular spacing-mt4 forgotpass">Forgot password?</a>
+              </div>	
+							
+							<div class="form-group spacing-mb40 pull-right">		
+                <input type="submit" value="Log In" disabled="" id="login_in" class="type buttonD1-skillupv2">		
+							</div>
+							<div class="clearfix"></div>
+							<div class="divided-bdr auto-m hidden-lg spacing-m"></div>
+			
+						</div>
+					</form>
+				</div>				 
+				 
+		 	</div>
+		</div>
+		 <div class="col-md-4 col-sm-12">
+			 
+			<div class="spacing-mt60 orlogin">
+				<h5 class="Subtitle-or-Buttons18 Neutral_02-text spacing-mb4 font-w-500">OR log in using your social account</h5>
+
+				<p class="Neutral_02-text Bodycopy-1 spacing-mb20 spacing-mt0">If you’ve signed up using your social account, please log in using the same details.</p>
+					<div class="social-section">
+							<a href="#" type="submit" class="Social2" onclick="thirdPartySignin(event, '/auth/login/facebook-in/?auth_entry=login&amp;next=%2Fdashboard');">
+									<i class="IconsSmallSocial_FB2"><img src="assets/images/Social_FB.svg" alt=""></i>
+							<span class="FACEBOOK2">FACEBOOK</span> 
+							</a>
+							<a href="#" type="submit" class="Social2" onclick="thirdPartySignin(event, '/auth/login/google-in-oauth2/?auth_entry=login&amp;next=%2Fdashboard');">
+									<i class="IconsSmallSocial_FB2"><img src="assets/images/Social_Google.svg" alt=""></i>	
+							<span class="FACEBOOK2">GOOGLE</span> 
+							</a>
+							<a href="#" type="submit" class="Social2" onclick="thirdPartySignin(event, '/auth/login/linkedin-in-oauth2/?auth_entry=login&amp;next=%2Fdashboard');">
+									<i class="IconsSmallSocial_FB2"><img src="assets/images/Social_LinkedIn.svg" alt=""></i>
+							<span class="FACEBOOK2">LINKEDIN</span> 
+							</a>
+							<a href="#" type="submit" class="Social2" onclick="thirdPartySignin(event, '/auth/login/azuread-in-oauth2/?auth_entry=login&amp;next=%2Fdashboard');">
+									<i class="IconsSmallSocial_FB2"><img src="assets/images/Social_Microsoft.svg" alt=""></i>	
+							<span class="FACEBOOK2">MICROSOFT</span> 
+							</a>
+					</div>
+			</div>
+		 </div>
+		 <div class="col-md-8 col-sm-12">
+			<div class="singupV2-form">
+			<p class="Bodycopy-1 Neutral_01-text spacing-mt20 font-w-600">Don’t have an account? <a href="/register" class="Primary04_Blue-text font-w-400 underline">Sign up</a></p>
+			<span class="Bodycopy-Link Neutral_01-text spacing-mt20">By logging in, you agree to our
+                                    <a href="https://stage.skillup.online/tos" class="Primary04_Blue-text underline" tabindex="-1">Terms of Service</a> and <a href="https://stage.skillup.online/privacy" class="Primary04_Blue-text underline" tabindex="-1">Privacy Policy</a>
+                                </span>
+
+			</div>
+			</div>
+		  </div>
+			</div>
+		  </div>
+		  
+    
+      </div>
+    </section>
+</body>
+</html>

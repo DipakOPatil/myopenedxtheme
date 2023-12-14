@@ -1,0 +1,101 @@
+.kickass_field {
+  margin: auto;
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.kickass_field input,.kickass_field select {
+  border: none;
+  color: #212934;
+  padding: 24px 16px 24px 16px;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 73px !important;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  font-size: 24px;
+  border-bottom: solid 1.5px #ccc;
+  box-sizing: inherit !important;
+  background: #f8f9fa;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel]{
+  padding-left: 0!important;
+
+}
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+  display: none!important;
+}
+.kickass_field-RIGHt {
+  float: left;
+  width: 83%;
+}
+.kickass_field-LeFT {
+  float: left;
+  width: 17%;
+}
+input#ccode {
+  color: #3685c6;
+  background: #ffffff;
+  border-bottom: solid 2px #b9c4ce;
+  width: 100px;
+  padding: 24px 16px 24px 16px!important;
+}
+.signupFree{
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: #f2f2f2;
+  padding: 40px 40px 0px 40px;
+  margin-top:40px;
+}
+.signupFree p{
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4f4f4f;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+.signupFree ul{
+  margin: 0;
+  padding: 0;
+}
+.signupFree ul li{
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #04313d;
+  align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    padding-bottom: 20px;
+}
+.signupFree ul li img{
+  padding-right: 10px!important;
+}
+.handiconDiv{
+  text-align: center!important;
+  padding-top: 40px!important;
+}
+.pb_40{
+  padding-bottom: 40px!important;
+}

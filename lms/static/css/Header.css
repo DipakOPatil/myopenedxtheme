@@ -208,7 +208,11 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     transform: rotate(-180deg);
     transition: transform 0.5s linear;
   } 
-  
+  .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none!important;
+    outline: none!important;
+    outline-offset: inherit!important;
+}
   .SigNUP li a {
     padding: 12px 20px !important;
   }
