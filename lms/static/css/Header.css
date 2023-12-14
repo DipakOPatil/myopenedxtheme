@@ -190,11 +190,20 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     top: -7px !important;
     transition: transform 0.5s linear;
   }
-  
-  /* .show img {
+  .courseNave:hover {
+    background-color: #cccccc;
+}
+.courseNave.open {
+  background-color: #cccccc;
+}
+.courseNave:hover img {
+  transform: rotate(-180deg);
+  transition: transform 0.5s linear;
+} 
+.courseNave.open img {
     transform: rotate(-180deg);
     transition: transform 0.5s linear;
-  } */
+  } 
   
   .SigNUP li a {
     padding: 12px 20px !important;
