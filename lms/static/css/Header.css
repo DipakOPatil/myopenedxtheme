@@ -191,10 +191,14 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     transition: transform 0.5s linear;
   }
   .courseNave:hover {
-    background-color: #cccccc;
+    color: #04313d;
+    background-color: #e0e0e0;
+    border-radius: 8px 8px 0 0;
 }
 .courseNave.open {
-  background-color: #cccccc;
+  color: #04313d;
+    background-color: #e0e0e0;
+    border-radius: 8px 8px 0 0;
 }
 .dropdown-toggle:hover img {
   transform: rotate(-180deg);
