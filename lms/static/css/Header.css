@@ -196,7 +196,7 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
 .courseNave.open {
   background-color: #cccccc;
 }
-.courseNave:hover img {
+.dropdown-toggle:hover img {
   transform: rotate(-180deg);
   transition: transform 0.5s linear;
 } 
