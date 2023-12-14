@@ -213,6 +213,9 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     outline: none!important;
     outline-offset: inherit!important;
 }
+.dropdown.courseNave .dropdown-toggle {
+  padding-bottom: 20px;
+}
   .SigNUP li a {
     padding: 12px 20px !important;
   }
