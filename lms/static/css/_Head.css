@@ -64,6 +64,10 @@ header .navbar-nav{
   background-color: #881c1f;
   border: 1px solid #881c1f;
   color: #fff;
+  padding: 9px 12px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 13px;
 }
 .navbar-nav > li.SiGnUPfREE a:hover,
 .navbar-nav > li.SiGnUPfREE a:focus{
@@ -185,6 +189,11 @@ header .navbar-nav{
 }
 .navbar-nav > li.LogiN_BTN a{
   border: 1px solid #04313d;
+  padding: 9px 12px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 13px;
+  color: #04313d;
 }
 .navbar-nav > li.LogiN_BTN a:hover,
 .navbar-nav > li.LogiN_BTN a:focus{
