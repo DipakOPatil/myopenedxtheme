@@ -200,7 +200,7 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
   transform: rotate(-180deg);
   transition: transform 0.5s linear;
 } 
-.courseNave.open img {
+.courseNave.open .dropdown-toggle img {
     transform: rotate(-180deg);
     transition: transform 0.5s linear;
   } 
