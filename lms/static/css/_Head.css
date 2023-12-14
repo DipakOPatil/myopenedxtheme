@@ -322,9 +322,19 @@ footer .footerMenU{
 }
 .search-form .input-group .input-group-btn{
   position: absolute;
-  right: 0;
+  right: 10px;
   width: 45px;
   z-index: 99;
+  top: -2px;
+  background-color: #e1e7ec;
+  height: 45px;
+}
+.search-button img {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  right: 0;
+  bottom: 0;
 }
 .search-form .input-group .input-group-btn .search-button{
   background: none !important;
