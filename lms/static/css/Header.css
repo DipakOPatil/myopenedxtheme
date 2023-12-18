@@ -46,12 +46,7 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     padding-right: 24px;
     padding-left: 24px;
   }
-  .mobileBld a{
-    color: #000;
-    font-weight: 700;
-    font-size: 16px;
-    text-decoration: none;
-  }
+  
   .headerContents {
     border: none;
     border-radius: 0px;

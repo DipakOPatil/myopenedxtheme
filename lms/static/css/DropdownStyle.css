@@ -339,6 +339,12 @@ ul.MegaMenu_PopularCourse li a {
   .mobileBld a:hover {
     background-color: #e0e0e0;
 }
+.mobileBld a{
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
   .iconUseranc{
     align-items: center!important;
     justify-content: center!important;
