@@ -106,7 +106,7 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     width: 20px;
     height: 20px;
     transform: rotate(-90deg);
-    background: url(/lms/static/images/dpicons.svg);
+    background: url(/static/images/dpicons.svg);
 }
 
   /* Basic styling for the dropdown */
