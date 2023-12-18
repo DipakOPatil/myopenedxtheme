@@ -101,12 +101,12 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
   .MMFRSTMeNU li.DPARROW a:after {
     content: "";
     position: absolute;
-    right: 0;
+    right: 20px;
     background-size: 100%;
     width: 20px;
     height: 20px;
     transform: rotate(-90deg);
-    background: url(/static/images/dpicons.svg);
+    background: url(/static/myopenedxtheme/images/dpicons.svg);
 }
 
   /* Basic styling for the dropdown */

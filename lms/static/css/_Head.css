@@ -987,9 +987,9 @@ header .navbar-nav.LoGInMeNU{
     transition: opacity 100ms linear;
   }
  
-  .CaTeGoRY_MeNU .MoBiLeMeNU li{}
+  .CaTeGoRY_MeNU .MoBiLeMeNU li{border-bottom: 1px solid #e0e0e0;}
   .CaTeGoRY_MeNU .MoBiLeMeNU li a{
-    padding: 13.5px 20px;
+    padding: 12px 20px;
     display: block;
     color: #044150;
     font-weight: 500;
@@ -1133,7 +1133,7 @@ header .navbar-nav.LoGInMeNU{
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #f1f3f8 !important;
+    background-color: #ffffff !important;
     width: 312px;
     z-index: 999;
     margin-left: 0px;
