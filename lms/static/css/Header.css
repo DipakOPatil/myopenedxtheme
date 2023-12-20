@@ -34,6 +34,10 @@ button:not(:disabled) {
 
 a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.btn):focus {
     text-decoration: none;
+    background-color: transparent!important;
+}
+li.SiGnUPfREE {
+  padding: 0 15px;
 }
 .headerBody {
     background-color: #fff;
