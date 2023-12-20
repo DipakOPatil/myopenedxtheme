@@ -34,6 +34,7 @@ button:not(:disabled) {
 
 a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.btn):focus {
     text-decoration: none;
+    background-color: transparent;
 }
 .footer {
     /* background: #044150; */
@@ -262,7 +263,7 @@ footer .containerfluid {
 
 .footerMiddleInR ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #fff!important;
 }
 
 .footerMiddleInR .FootMenuHeDinG {
