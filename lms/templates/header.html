@@ -35,96 +35,129 @@ from openedx.core.djangolib.markup import HTML, Text
         <div class="navbar-right NAVRiGhT">
           <ul class="nav navbar-nav CaTeGoRY_MeNU">
             <li>
-              <div class="dropdown courseNave">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Course
-                <span><img src="${static.url("images/dpicons.svg")}" alt="${_('dpicons')}" /></span></button>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle" id="NavMegamenu" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course
+                <span><img src="${static.url("images/dpicons.svg")}" alt="${_('dpicons')}" /></span> </a>
                 <ul id="MaNUTOP" class="MoBiLeMeNU">
                   <li class="UserDeatiLs ">
                     <a class="CloseSideBar" href="Javascript:void(0);"><img src="${static.url("images/closeicon.svg")}" alt="${_('closeicon')}" /></a>
                     <span class="UserImG"><img src="${static.url("images/NoLoginM.png")}" alt="${_('NoLoginM')}" /></span>
-                    <span class="UserName"><a href="Javascript:void(0);">Hello, Log in</a></span>
-                  </li>
+                    <span class="UserName"><a href="Javascript:void(0);">Hi</a></span>
+                    
+                </li>
                   <li>
                     <ul id="MMFRSTMeNU1" class="MMFRSTMeNU">
+                      <li id="EXPCaTMENU_pra" class="DPARROW"><!--<a href="Javascript:void(0);">Courses</a> -->
+                      <ul id="EXPCaTMENU_Sub" class="EXPCaTMENU_Submenu">
                       <li id="EXPCaTMENU" class="DPARROW"><a href="Javascript:void(0);">Categories</a></li>
-                      <li class="DPARROW"><a href="Javascript:void(0);">Courses by</a></li>
-                      <li class="DPARROW"><a href="Javascript:void(0);">Popular courses</a></li>
-                      <li class="DPARROW"><a href="Javascript:void(0);">Services</a></li>
-                      <li class="mobileBld"><a href="Javascript:void(0);">About SkillUp Online</a></li>
-                      <li class="mobileBld"><a href="Javascript:void(0);">Blog</a></li>
-                      <li class="mobileBld"><a href="Javascript:void(0);">Contact Us</a></li>
-                      <!-- <li><a href="http://palm-dev.eastus2.cloudapp.azure.com:1999/authn/login">Log in</a></li>
-                      <li><a href="http://palm-dev.eastus2.cloudapp.azure.com:1999/authn/register">Sign Up</a></li> -->
+                      <li id="EXPCaTMENUpartners" class="DPARROW"><a href="Javascript:void(0);">Courses by</a></li>
+                      <li id="EXPCaTMENUCertification" class="DPARROW"><a href="Javascript:void(0);">Popular Courses</a></li>
+                      <li id="EXPCaTMENUServices" class="DPARROW"><a href="Javascript:void(0);">Services</a></li>
+                      </ul>
+                      
+                      </li>
+                      
+                  
+                     <li><a href="#" class="BlogfontBold">About SkillUp Online</a></li>
+                      <li><a href="#" class="BlogfontBold">Blog</a></li>
+                      <li><a href="#" class="BlogfontBold">Contact Us</a></li>
                     </ul>
                   </li>
                 </ul>
-  
-                <ul id="MMDroPDoWNMAiN" class="dropdown-menu">
-                  <!--First Menu Start-->
-                  <li id="MMDroPDoWNMAiNBaCK" class="mmenuoption"><a href="javascript:void(0);">Course</a></li>
-                  <li class="dropdown-submenu">
-                    <ul class="dropdown-menu dropdown-cat dropdownMenu show" data-bs-popper="none">
-                      <li><div class="CatMENU">
-                      <div class="CatMENUInR">
-                      <div class="MainCatE catcolumn divbox1">
-                      <div class="CatHeading">
-                      <h2>Categories</h2></div>
+          
+                <div id="MMDroPDoWNMAiN" class="dropdown-menu hoverefffectdiv">
+                   
+                   <div class="MegaMenuSection">
+                   <div class="BoxFor3" id="boxfor1">
+                        <div id="MMDroPDoWNMAiNBaCK" class="mainmenuoption"><a href="javascript:void(0);">Categories</a></div>
+                       <div class="Paddbox">
+                       <h4 class="MegaMenuHeading">Categories</h4>
                       <ul class="categorylist customscroll dropdown-submenu">
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Artificial Intelligence</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Big Data</span></a></li><li><a href="/blockchain-courses-and-programs/?utm_source=websiteinternal&amp;utm_medium=megamenu&amp;utm_campaign=NA"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Blockchain</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Business Applications</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Cloud Computing</span></a></li><li><a href="/compliance-courses-and-programs/?utm_source=websiteinternal&amp;utm_medium=megamenu&amp;utm_campaign=NA"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Compliance-POSH</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Cybersecurity</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Data Analytics</span></a></li><li><a href="/data-science-courses-and-programs/?utm_source=websiteinternal&amp;utm_medium=megamenu&amp;utm_campaign=NA"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Data Science</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">DevOps</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Human Skills</span></a></li><li><a href="/internet-of-things-courses-and-programs/?utm_source=websiteinternal&amp;utm_medium=megamenu&amp;utm_campaign=NA"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Internet of Things (IoT)</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Modern Workplace</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Power Platform</span></a></li>
-                      <li><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Productivity</span></a></li>
-                      </ul></div>
-                      <div class="LearningPartners catcolumn divbox2">
-                        <div class="CatHeading"><h2>Courses by</h2></div>
-                        <ul class="learning-Partners">
-                          <li><a href="#"><img src="${static.url("images/companies/FSPrimeIcon.png")}" alt="${_('FSPrimeIcon')}" /></a></li>
-                          <li><a href="#"><img src="${static.url("images/companies/googlecloud.png")}" alt="${_('googlecloud')}" /></a></li>
-                          <li><a href="#"><img src="${static.url("images/companies/IBMIcon.png")}" alt="${_('IBMIcon')}" /></a></li>
-                          <li><a href="#"><img src="${static.url("images/companies/MSOFTIcon.png")}" alt="${_('MSOFTIcon')}" /></a></li>
-                          <li><a href="#"><img src="${static.url("images/companies/PLUIcon.png")}" alt="${_('PLUIcon')}" /></a></li>
-                        </ul></div>
-                        <div class="PolularCourSE catcolumn divbox3">
-                          <div class="CatHeading"><h2>Popular Courses</h2></div>
-                          <ul class="MegaMenu_PopularCourse">
-                            <li><a href="#"><div class="PopularCourse_LeFT"><img src="${static.url("images/AIchatbot.jpg")}" alt="${_('AIchatbot')}" /></div>
-                              <div class="PopularCourse_Right">
-                                <p class="Course_name">Artificial Intelligence Foundations</p>
-                              </div></a></li>
-                              <li><a href="#">
-                                <div class="PopularCourse_LeFT"><img src="${static.url("images/develop.jpg")}" alt="${_('develop')}" /></div>
-                                <div class="PopularCourse_Right">
-                                  <p class="Course_name">AI-050: Develop Generative AI Solutions with Azure OpenAI Service</p>
-                                </div></a></li>
-                                <li><a href="#">
-                                  <div class="PopularCourse_LeFT"><img src="${static.url("images/foundation.jpg")}" alt="${_('foundation')}" /></div>
-                                  <div class="PopularCourse_Right">
-                                    <p class="Course_name">Foundations of Cybersecurity Program</p>
-                                  </div></a></li>
-                                  <li><a href="#">
-                                    <div class="PopularCourse_LeFT"><img src="${static.url("images/AIBanner.png")}" alt="${_('AIBanner')}" /></div>
-                                    <div class="PopularCourse_Right">
-                                      <p class="Course_name">AI Chatbots Without Programming</p></div>
-                                    </a></li></ul>
-                                    <div class="MainCatE">
-                                      <ul class="categorylist"><li class="exploreAll"><a href="#"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Explore All Courses</span></a></li></ul></div></div><div class="MainCatE1 catcolumn divbox4"><div class="ServicesTBD"><div class="CatHeading"><h2>Services</h2></div><ul class="categorylist dropdown-submenu"><li><a href="/placement/?utm_source=websiteinternal&amp;utm_medium=Footer&amp;utm_campaign=NA"><span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Placement</span></a></li></ul></div></div></div></div></li></ul>
-                  </li>
-                  <!--First Menu End-->
-                  
-                  <!--Third Menu End-->
-                 
-                 
-               
-                  <!--Five Menu End-->
-                </ul>
-              </div>    
+                        <li><a href="#">Artificial Intelligence</a></li>
+                        <li><a href="#">Big Data</a></li>
+                        <li><a href="#">Business Applications</a></li>
+                        <li><a href="#">Cloud Computing</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><a href="#">Human Skills</a></li>
+                        <li><a href="#">Modern Workplace</a></li>
+                        <li><a href="#">Power Platform</a></li>
+                        <li><a href="#">Productivity</a></li>
+                        </ul> 
+                      </div>
+                   </div>
+                    <div class="BoxFor3" id="boxfor2">
+                     <div id="MMDroPDoWNMAiNBaCK2" class="mainmenuoption"><a href="javascript:void(0);">Courses by</a></div>  	
+                        <div class="Paddbox">
+                       <h4 class="MegaMenuHeading">Courses by</h4>
+                      <ul class="learning-Partners">
+                      <li><a href="#"><img src="${static.url("images/companies/FSPrimeIcon.png")}" alt="${_('FSPrimeIcon')}" /></a></li>
+                      <li><a href="#"><img src="${static.url("images/companies/googlecloud.png")}" alt="${_('googlecloud')}" /></a></li>
+                      <li><a href="#"><img src="${static.url("images/companies/IBMIcon.png")}" alt="${_('IBMIcon')}" /></a></li>
+                      <li><a href="#"><img src="${static.url("images/companies/MSOFTIcon.png")}" alt="${_('MSOFTIcon')}" /></a></li>
+                      <li><a href="#"><img src="${static.url("images/companies/PLUIcon.png")}" alt="${_('PLUIcon')}" /></a></li>
+                      </ul>
+                        </div>
+                      </div>
+                   <div class="BoxFor3" id="boxfor3"> 
+                   <div id="MMDroPDoWNMAiNBaCK3" class="mainmenuoption"><a href="javascript:void(0);">Popular Courses</a></div>
+                      <div class="Paddbox">
+                   <h4 class="MegaMenuHeading">Popular Courses</h4>
+                   <ul class="MegaMenu_PopularCourse">
+                    <li><a href="#"><div class="PopularCourse_LeFT"><img src="${static.url("images/AIchatbot.jpg")}" alt="${_('AIchatbot')}" /></div>
+                      <div class="PopularCourse_Right">
+                        <p class="Course_name">Artificial Intelligence Foundations</p>
+                      </div></a></li>
+                      <li><a href="#">
+                        <div class="PopularCourse_LeFT"><img src="${static.url("images/develop.jpg")}" alt="${_('develop')}" /></div>
+                        <div class="PopularCourse_Right">
+                          <p class="Course_name">AI-050: Develop Generative AI Solutions with Azure OpenAI Service</p>
+                        </div></a></li>
+                        <li><a href="#">
+                          <div class="PopularCourse_LeFT"><img src="${static.url("images/foundation.jpg")}" alt="${_('foundation')}" /></div>
+                          <div class="PopularCourse_Right">
+                            <p class="Course_name">Foundations of Cybersecurity Program</p>
+                          </div></a></li>
+                          <li><a href="#">
+                            <div class="PopularCourse_LeFT"><img src="${static.url("images/AIBanner.png")}" alt="${_('AIBanner')}" /></div>
+                            <div class="PopularCourse_Right">
+                              <p class="Course_name">AI Chatbots Without Programming</p></div>
+                            </a></li>
+                  </ul>
+                  <div class="MainCatE">
+                    <ul class="categorylist">
+                      <li class="exploreAll">
+                        <a href="#">Explore All Courses</a>
+                      </li>
+                    </ul>
+                  </div>
+                  </div> 
+                  </div>
+                       
+                  <div class="BoxFor4" id="boxfor4">
+          <div id="MMDroPDoWNMAiNBaCK4" class="mainmenuoption"><a href="javascript:void(0);">Services</a></div>
+                    <div class="Paddbox">
+                        <h4 class="MegaMenuHeading">Services</h4>
+                          <ul class="MegaMenu_add">
+                            <li><a href="#" target="_blank">Placement</a></li>  
+                          </ul>	 
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+              </div>
+              <ul id="MMDroPDoWNMAiN" class="dropdown-menu">
+                <!--First Menu Start-->
+                <li id="MMDroPDoWNMAiNBaCK" class="mainmenuoption"><a href="javascript:void(0);">Categories</a>
+                </li>
+                <li class="dropdown-submenu">
+                  <a id="ArtInT" class="CommmonClick" tabindex="-1"
+                    href="#">satish</a>
+          
+              </li>
+                </ul>    
             </li>
           </ul>
           <ul class="nav navbar-nav HeAdSeArCH">
